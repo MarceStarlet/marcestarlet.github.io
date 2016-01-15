@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on MarceStarlet</title>
+    <link>http://marcestarlet.github.io/tags/welcome/</link>
+    <description>Recent content in Welcome on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
+    <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
+    <lastBuildDate>Thu, 14 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://marcestarlet.github.io/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+        
+          <item>
+            <title>Welcome 2016</title>
+            <link>http://marcestarlet.github.io/blog/2016/01/14/welcome-2016/</link>
+            <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
+            <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+            <guid>http://marcestarlet.github.io/blog/2016/01/14/welcome-2016/</guid>
+            <description>
+
+&lt;h2 id=&#34;el-comienzo-the-begining:a8158e2ae96b1b34e1f733f49d15bcfd&#34;&gt;El comienzo/The begining&lt;/h2&gt;
+
+&lt;p&gt;Hola/Hi&lt;/p&gt;
+
+&lt;p&gt;Mi nombre es Marcela Sena conocida como MarceStarlet, tengo 28 años, soy Ingeniero de Software y vivo en Guadalajara, Jal., México, y les doy al bienvenida a este mi nuevo blog de programación/conceptos/tecnologias/herramientas/tendencias/ciencias computacionales/etc., esperando sea de su agrado.&lt;/p&gt;
+
+&lt;p&gt;La idea de este blog es compartirles lo que sé, lo que estoy aprendiendo, y lo que me gustaría aprender todo relacionado con las ciencias computacionales. El reto para mi es escribirles frecuentemente; al menos una vez al mes encontrarán un post.&lt;/p&gt;
+
+&lt;p&gt;Ahora les hablaré sobre lo que estoy usando para bloggear, les presento a &amp;ldquo;hugo&amp;rdquo;, un framework de propósito general para construir websites, y por website técnicamente concluimos que es un generador de sitios estáticos. Enfocado a la sencillez y rendimiento, está programado en &amp;ldquo;go&amp;rdquo; y es multiplataforma (Win, Mac, Linux). Este framework me lo presentó uno de mis ingenieros favoritos en todo el mundo: &amp;ldquo;Juan Sandoval&amp;rdquo;, y ahora se los presento yo a ustedes. Si quieren saber más sobre hugo, clic &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; title=&#34;aquí&#34;&gt;hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Además, les comento de antemano que estaré bloggeando en inglés para que el blog tenga más alcance.&lt;/p&gt;
+
+&lt;p&gt;Gracias&lt;/p&gt;
+
+&lt;p&gt;/&lt;/p&gt;
+
+&lt;p&gt;My name is Marcela Sena well known as MarceStarlet, I&amp;rsquo;m 28 years old, I&amp;rsquo;m a Software Engineer and I live in Guadalajara, Jal., Mexico, I welcome you to my new blog about programming/concepts/technologies/tools/computer science/etc., hoping that you will enjoy.&lt;/p&gt;
+
+&lt;p&gt;The main idea of this blog is sharing what I know, what I&amp;rsquo;m learning, and what I want to learn, all related to computer science. The challenge for me is write for you as frequently as I can; at least once per month you will find a post here.&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;rsquo;m going to talk about what I&amp;rsquo;m using for blogging, let me introduce you to &amp;ldquo;hugo&amp;rdquo;, a general-purpose website framework, and for website we can technically conclude that is a static site generator. Focused in simplicity and performance, it was programmed in &amp;ldquo;go&amp;rdquo;, and it is cross platform (Win, Mac, Linux). This framework has been introduced to me by one of my favorite Engineers in the world: &amp;ldquo;Juan Sandoval&amp;rdquo;, and now I&amp;rsquo;m introducing it to you. If you want to know a little bit more about hugo, click &lt;a href=&#34;https://gohugo.io/overview/introduction/&#34; title=&#34;here&#34;&gt;hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also, I tell you in advance that I&amp;rsquo;ll be blogging in english to have more scope.&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+</description>
+          </item>
+        
+      
+    
+  </channel>
+</rss>

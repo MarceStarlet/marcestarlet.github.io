@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://marcestarlet.github.io/</loc>
+    <lastmod>2016-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</loc>
+    <lastmod>2016-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://marcestarlet.github.io/blog/2016/01/14/welcome-2016/</loc>
+    <lastmod>2016-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://marcestarlet.github.io/blog/2016/01/10/about-me/</loc>
+    <lastmod>2016-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://marcestarlet.github.io/page/LICENSE/</loc>
+  </url>
+  
+</urlset>

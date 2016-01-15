@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on MarceStarlet</title>
+    <link>http://marcestarlet.github.io/page/</link>
+    <description>Recent content in Pages on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
+    <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
+    <atom:link href="http://marcestarlet.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+    
+  </channel>
+</rss>
