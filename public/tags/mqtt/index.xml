@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mqtt on MarceStarlet</title>
+    <link>http://marcestarlet.github.io/tags/mqtt/</link>
+    <description>Recent content in Mqtt on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
+    <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
+    <lastBuildDate>Thu, 14 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://marcestarlet.github.io/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+        
+          <item>
+            <title>MQTT</title>
+            <link>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</link>
+            <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
+            <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+            <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</guid>
+            <description>
+
+&lt;h2 id=&#34;introduction:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;INTRODUCTION&lt;/h2&gt;
+
+&lt;h3 id=&#34;what-about-mqtt:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;What about MQTT?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Have you heard about MQTT?&lt;/strong&gt; Hope you have, but if you haven&amp;rsquo;t, don&amp;rsquo;t worry you&amp;rsquo;ll be hearing more about it in the next months since it&amp;rsquo;s becoming popular.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MQTT&lt;/strong&gt; is the most popular protocol used for IoT (internet of things) but don&amp;rsquo;t get confused, MQTT isn&amp;rsquo;t only for IoT, as it is a protocol it can be used in most of the communication situations, like TCP/IP does, but there are some great things that becomes MQTT special and unique to solve a communication problem.&lt;/p&gt;
+
+&lt;h3 id=&#34;history:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;History&lt;/h3&gt;
+
+&lt;p&gt;MQTT was born in the IBM labs in 1999, when they faced a situation where they needed to save battery energy and use minimal bandwidth communication for a satellite connection. MQTT has a long story about its supposed acronym meanning, but what you should know about it, is: that the acronym does not exists anymore and you should call it only MQTT. Courious fact: I know about MQTT because of its acronym meanning that comes from an old IBM product called &amp;ldquo;MQ Series&amp;rdquo; that uses this &amp;ldquo;Telemetry Transport&amp;rdquo; protocol.&lt;/p&gt;
+
+&lt;p&gt;Well, after some history we can pass to a more excited section that defines to us the MQTT protocol.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-really-is-mqtt:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;What really is MQTT?&lt;/h3&gt;
+
+&lt;p&gt;MQTT is a lightweightm, open, simple and easy to implement Client Server publish/subscribe messaging transport protocol.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;lightweight&lt;/em&gt; because is binary and it has only minimal packet overhead.
+&lt;em&gt;open&lt;/em&gt; because since it became standard, the OASIS open organization took it under their tutelage.
+&lt;em&gt;simple&lt;/em&gt; because is extremely easy to implement in the client side.&lt;/p&gt;
+
+&lt;p&gt;Therfore, it was created to run over constrained devices with limited resources.&lt;/p&gt;
+
+&lt;p&gt;Ta, Tan! Yep, these are the things that makes MQTT special. Think on these 3 things, related to the constrained and limited devices. First, the devices, what kind of devices are limited? a Microwave, a Refrigerator, a Watch, etc., ok then start thinking, why you want to communicate your microwave or refrigerator to other devices more complex and less limited? Because we&amp;rsquo;re in the XXI century and we&amp;rsquo;re smart people and we&amp;rsquo;re programmers and someone has invented a lightweight and simple protocol to do that and taking in account all of these reasons, just because we want smart houses, smart cities and change the world, so please start thinking on this when you want to learn more about MQTT and you wanto to use it to solve a communication problem.&lt;/p&gt;
+
+&lt;p&gt;In the next post I&amp;rsquo;ll tell you more about the Client Server and publish/subscribe transport protocol&lt;/p&gt;
+</description>
+          </item>
+        
+      
+    
+  </channel>
+</rss>
