@@ -16,10 +16,10 @@ menu        = "main"
 			My name is <strong>Marcela Sena</strong> and I'm from Tepic in Nayarit, Mexico. 
 		</p>
 		<p>
-			Currently I live and work in Guadalajara, Jalisco and I'm a Software Engineer passionate for programming, learn new stuffs, diversity in IT, movies, music, running, hiking and my dog; her name is Frida like the mexican paiter Frida Kahlo.
+			I currently live and work in Guadalajara, Jalisco. I'm a Software Engineer passionate for programming, learn new stuffs, diversity in IT, movies, music, running, hiking and my dog; her name is Frida like the mexican painter Frida Kahlo.
 	    </p>
 	    <p>
-			I love rainy afternoons and a delicious cup of coffee in the morning with a piece of sweet bread (my favorite is the cappuccino). I really enjoy walk along to a park, mountain or the city as well as I love running while I listen to music. Teaching others and sharing my knowledge is exciting to me because I feel I can change the world even if I share my thoughts.
+			I love rainy afternoons and a delicious cup of coffee in the morning with a piece of sweet bread (my favorite is the cappuccino). I really enjoy walk along to a park, mountain or the city as well as I love running while I listen to music. Teaching others and sharing my knowledge is exciting to me because I feel I can change the world, even if I share my thoughts.
 		</p>
 	</div>
 </div>
@@ -29,7 +29,7 @@ menu        = "main"
 
 ### My Career
 
-I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in Java GDL community.
+I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in Java GDL community.  
 
 <div>
   <div class="panel panel-primary">
@@ -197,7 +197,7 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
   </div>
 </div>
 
-<!--<div class="panel panel-primary">
+<div class="panel panel-primary">
   <div class="panel-heading">
     <h2>Courses & Certifications</h2>
   </div>      
@@ -210,10 +210,26 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
       <li>Oracle Certified Professional, Java SE 6 Programmer</li>
     </ul>
   </div>
-</div>-->
-
+</div>
 
 <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>As Speaker</h2>
+  </div>      
+  <div class="panel-body">
+    <ul>
+      <li>Java Web Technologies (Toshiba GCS)</li>
+      <li>Las Internetas - Presentation of the CoC (Campus Party 2015)</li>
+      <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party 2015)</li>
+      <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
+      <li>Google I/O 2015 Experience (Tech Women Community)</li>
+      <li>Spring 3.0 - MVC Moduel & Project 101 (JavaGDL Community, Tech Women Community)</li>
+      <li>Java Security Topics (JavaGDL Community)</li>
+    </ul>
+  </div>
+</div>
+
+<!--<div class="panel panel-primary">
   <div class="panel-heading">
     <h2>Courses & Certifications</h2>
   </div>      
@@ -268,5 +284,5 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
           </li>
       </ul>
     </div>
-  </div>
+  </div>-->
 </div>

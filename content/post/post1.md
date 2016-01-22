@@ -9,9 +9,9 @@ date       = "2016-01-14"
 
 Hola/Hi
 
-Mi nombre es Marcela Sena conocida como MarceStarlet, tengo 28 años, soy Ingeniero de Software y vivo en Guadalajara, Jal., México, y les doy al bienvenida a este mi nuevo blog de programación/conceptos/tecnologias/herramientas/tendencias/ciencias computacionales/etc., esperando sea de su agrado.
+Mi nombre es Marcela Sena conocida como MarceStarlet, tengo 28 años, soy Ingeniero de Software y vivo en Guadalajara, Jal., México; les doy la bienvenida a éste mi nuevo blog de programación/conceptos/tecnologías/herramientas/tendencias/ciencias computacionales/etc., esperando sea de su agrado.
 
-La idea de este blog es compartirles lo que sé, lo que estoy aprendiendo, y lo que me gustaría aprender todo relacionado con las ciencias computacionales. El reto para mi es escribirles frecuentemente; al menos una vez al mes encontrarán un post.
+La idea de este blog es compartirles lo que sé, lo que estoy aprendiendo, y lo que me gustaría aprender, todo relacionado con las ciencias computacionales. El reto para mi es escribirles frecuentemente; al menos una vez al mes encontrarán un post.
 
 Ahora les hablaré sobre lo que estoy usando para bloggear, les presento a "hugo", un framework de propósito general para construir websites, y por website técnicamente concluimos que es un generador de sitios estáticos. Enfocado a la sencillez y rendimiento, está programado en "go" y es multiplataforma (Win, Mac, Linux). Este framework me lo presentó uno de mis ingenieros favoritos en todo el mundo: "Juan Sandoval", y ahora se los presento yo a ustedes. Si quieren saber más sobre hugo, clic [hugo](https://gohugo.io/overview/introduction/ "aquí"). 
 
