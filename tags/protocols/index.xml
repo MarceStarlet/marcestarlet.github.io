@@ -7,8 +7,95 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
     <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
-    <lastBuildDate>Thu, 14 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://marcestarlet.github.io/tags/protocols/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+        
+          <item>
+            <title>MQTT-2</title>
+            <link>http://marcestarlet.github.io/blog/2016/01/21/mqtt-2/</link>
+            <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
+            <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+            <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt-2/</guid>
+            <description>
+
+&lt;h2 id=&#34;mqtt-the-protocol:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;MQTT - The protocol&lt;/h2&gt;
+
+&lt;p&gt;Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now some context, take it from Wikipedia the definition of protocol:
+In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. These are the rules or standard that defines the syntax, semantics and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both.&lt;/p&gt;
+
+&lt;p&gt;The MQTT protocol is based on top of TCP/IP and both client and &lt;em&gt;broker need&lt;/em&gt; to have a TCP/IP stack.&lt;/p&gt;
+
+&lt;h2 id=&#34;mqtt-elements:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;MQTT Elements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Publish/Subscriber&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Broker (Server)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;publish-subscriber:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Publish/Subscriber&lt;/h3&gt;
+
+&lt;p&gt;The publish/subscribe pattern (pub/sub) is an alternative to the traditional client-server model, where a client communicates directly with an endpoint. However, &lt;strong&gt;Pub/Sub decouples a client, who is sending a particular message (called publisher) from another client (or more clients), who is receiving the message (called subscriber)&lt;/strong&gt;. This means that the publisher and subscriber don’t know about the existence of one another. There is a third component, called broker, which is known by both the publisher and subscriber, which filters all incoming messages and distributes them accordingly.&lt;/p&gt;
+
+&lt;p&gt;Advantages of this pattern:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Decoupling of the clients&lt;/strong&gt;, publishers and receivers, do not need to know about each others, do not need to be running at the same time, and the operations on both components do not affect the other.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Message filtering&lt;/strong&gt; is the ability that pub/sub defines so the receivers do only receive the messages they are interested in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;. Can be highly parallelized and processed event-driven.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;MQTT takes advantages of all of these characterístics of the pub/sub pattern.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://marcestarlet.github.io/img/hivemq_ps.png&#34; alt=&#34;Take it from HiveMQ MQTT blog&#34; title=&#34;Pub/Sub example&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This fragment was taken from the HiveMQ MQTT blog documentation&lt;/em&gt; &lt;a href=&#34;http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe&#34; title=&#34;hivemq&#34;&gt;HiveMQ Pub/Sub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;client:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Client&lt;/h3&gt;
+
+&lt;p&gt;As we have explained in the previous section we can infer that a client can be both a publisher or a subscriber acting under the different purposes they have, or be both at the same time. A publisher is the client destined to accomplish the task of send messages to the MQTT Broker, so then, the subscriber is charged to subscribe to the broker and receive the messages that is interested in.&lt;/p&gt;
+
+&lt;p&gt;Therefore, a client is any device using the MQTT library and executes the corresponding to connect to a MQTT broker, through a network.&lt;/p&gt;
+
+&lt;p&gt;The MQTT protocol has many library implementations in most of the programming languages such as Java, Android, Arduino, C, C++, C#, Go, iOS, JavaScript, .NET.&lt;/p&gt;
+
+&lt;h3 id=&#34;broker:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Broker&lt;/h3&gt;
+
+&lt;p&gt;The Broker is the heart of the protocol, it is the component that makes the protocol real. The Broker is in charge of establish connections with all clients, receive all the messages, filter and deliver them to the corresponding interested subscribers. Besides, it persists the messages needed, keeps sessions with the clients, security by supporting authorization and authentication, etc. As it is responsible of communication between clients it must support failover scenarios to recover itself, should be scalable as well as easy to integrate in backend systems.&lt;/p&gt;
+
+&lt;p&gt;The Clients connect to the Broker and the broker connects the clients each other.&lt;/p&gt;
+
+&lt;p&gt;Some Brokers that implements MQTT are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ActiveMQ&lt;/li&gt;
+&lt;li&gt;Apache Apollo&lt;/li&gt;
+&lt;li&gt;HiveMQ&lt;/li&gt;
+&lt;li&gt;Mosquitto&lt;/li&gt;
+&lt;li&gt;Moquette&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;RabbitMQ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;WebSpehreMQ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;JBoss A-MQ&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;IBM Integration Bus&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the Next post of the MQTT protocol I&amp;rsquo;ll explain you the concepts of the protocol like: QoS, Session, Topics, Connections, MQTT Messages, etc. Also, we&amp;rsquo;ll see how to use the protocol by implementing some clients that will connect to a MQTT Broker.&lt;/p&gt;
+</description>
+          </item>
+        
+      
     
       
         
@@ -30,7 +117,7 @@
 
 &lt;h3 id=&#34;history:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;History&lt;/h3&gt;
 
-&lt;p&gt;MQTT was born in the IBM labs in 1999, when they faced a situation where they needed to save battery energy and use minimal bandwidth communication for a satellite connection. MQTT has a long story about its supposed acronym meanning, but what you should know about it, is: that the acronym does not exists anymore and you should call it only MQTT. Courious fact: I know about MQTT because of its acronym meanning that comes from an old IBM product called &amp;ldquo;MQ Series&amp;rdquo; that uses this &amp;ldquo;Telemetry Transport&amp;rdquo; protocol.&lt;/p&gt;
+&lt;p&gt;MQTT was born in the IBM labs in 1999, when they faced a situation where they needed to save battery energy and use minimal bandwidth communication for a satellite connection. MQTT has a long story about its supposed acronym meanning, but what you should know about it, is: that the acronym does not exists anymore and you should only call it MQTT. Courious fact: I know about MQTT because of its acronym meanning that comes from an old IBM product called &amp;ldquo;MQ Series&amp;rdquo; that uses this &amp;ldquo;Telemetry Transport&amp;rdquo; protocol.&lt;/p&gt;
 
 &lt;p&gt;Well, after some history we can pass to a more excited section that defines to us the MQTT protocol.&lt;/p&gt;
 
@@ -38,15 +125,15 @@
 
 &lt;p&gt;MQTT is a lightweightm, open, simple and easy to implement Client Server publish/subscribe messaging transport protocol.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;lightweight&lt;/em&gt; because is binary and it has only minimal packet overhead.
-&lt;em&gt;open&lt;/em&gt; because since it became standard, the OASIS open organization took it under their tutelage.
-&lt;em&gt;simple&lt;/em&gt; because is extremely easy to implement in the client side.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;lightweight&amp;rdquo;&lt;/em&gt; because is binary and it has only minimal packet overhead.&lt;br /&gt;
+&lt;em&gt;&amp;ldquo;open&amp;rdquo;&lt;/em&gt; because since it became standard, the OASIS open organization took it under their tutelage.&lt;br /&gt;
+&lt;em&gt;&amp;ldquo;simple&amp;rdquo;&lt;/em&gt; because is extremely easy to implement in the client side.&lt;/p&gt;
 
 &lt;p&gt;Therfore, it was created to run over constrained devices with limited resources.&lt;/p&gt;
 
-&lt;p&gt;Ta, Tan! Yep, these are the things that makes MQTT special. Think on these 3 things, related to the constrained and limited devices. First, the devices, what kind of devices are limited? a Microwave, a Refrigerator, a Watch, etc., ok then start thinking, why you want to communicate your microwave or refrigerator to other devices more complex and less limited? Because we&amp;rsquo;re in the XXI century and we&amp;rsquo;re smart people and we&amp;rsquo;re programmers and someone has invented a lightweight and simple protocol to do that and taking in account all of these reasons, just because we want smart houses, smart cities and change the world, so please start thinking on this when you want to learn more about MQTT and you wanto to use it to solve a communication problem.&lt;/p&gt;
+&lt;p&gt;Ta, Tan! Yep, these are the things that makes MQTT special. Think on these 3 things, related to the constrained and limited devices. First, the devices, what kind of devices are limited? a Microwave, a Refrigerator, a Watch, etc., ok then start thinking, why you want to communicate your microwave or refrigerator to other devices more complex and less limited? Because we&amp;rsquo;re in the XXI century and we&amp;rsquo;re smart people and we&amp;rsquo;re programmers and someone has invented a lightweight and simple protocol to do that and taking in account all of these reasons, just because we want smart houses, smart cities and change the world, so please start thinking on this when you want to learn more about MQTT and you want to use it to solve a communication problem.&lt;/p&gt;
 
-&lt;p&gt;In the next post I&amp;rsquo;ll tell you more about the Client Server and publish/subscribe transport protocol&lt;/p&gt;
+&lt;p&gt;In the next post I&amp;rsquo;ll tell you more about the Client Server and publish/subscribe transport protocol.&lt;/p&gt;
 </description>
           </item>
         
