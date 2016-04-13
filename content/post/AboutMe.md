@@ -6,7 +6,7 @@ date		= "2016-01-10"
 menu        = "main"
 +++
 
-### This is me
+<h3>This is me</h3>
 <div >
 	<div style="float: left; padding: 7px; 0px;">
 		<img src="/img/marce.png" alt="MarceStarlet" class="img-circle" heigh="170" width="170">
@@ -25,11 +25,11 @@ menu        = "main"
 </div>
 <div>
 	<p>&nbsp;</p>
+  <h3>My Career</h3>
+  <p>
+  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in Java GDL community.  
+  </p><br/>
 </div>
-
-### My Career
-
-I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in Java GDL community.  
 
 <div>
   <div class="panel panel-primary">
@@ -47,10 +47,11 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
               </div>
               <div class="timeline-body">
                 Development of enterprise applications<br/><br/>
-                <button class="btn btn-danger btn-sm" data-toggle="collapse" data-target="#refT1">
+                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT1">
                   Middleware Solutions, Messaging Brokers
                 </button>
-                <div id="refT1" class="collapse">
+                <div id="refT1" class="panel panel-default collapse">
+                  <div class="panel-body">
                     <ul>
                       <li>Development & manintenance of a midleware solution to communicate the retail store applications with an external hosts</li>
                       <li>Development of a Java embedded Messaging broker allowing bidirectional broker-to-broker communication</li>
@@ -60,11 +61,13 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
                         <li>ActiveMQ, Moquette, Mosquito, WebSphereMQ, Micro Broker, KahaDB </li>
                       </ul>
                     </ul>
+                  </div>
                 </div><br/><br/>
-                <button class="btn btn-danger btn-sm" data-toggle="collapse" data-target="#refT2">
+                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT2">
                   Web Application
                 </button>
-                <div id="refT2" class="collapse">
+                <div id="refT2" class="panel collapse">
+                  <div class="panel-body">
                     <ul>
                       <li>Development of a Web Application for the HR area that evaluates interviews</li>
                       <li>Exam configuration, execution and evaluation</li>
@@ -81,6 +84,7 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
                         <li>Tomcat, Suse Enterprise, MySQL</li>
                       </ul>
                     </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,71 +222,48 @@ I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in d
   </div>      
   <div class="panel-body">
     <ul>
-      <li>Java Web Technologies (Toshiba GCS)</li>
-      <li>Las Internetas - Presentation of the CoC (Campus Party 2015)</li>
-      <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party 2015)</li>
-      <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
-      <li>Google I/O 2015 Experience (Tech Women Community)</li>
-      <li>Spring 3.0 - MVC Moduel & Project 101 (JavaGDL Community, Tech Women Community)</li>
-      <li>Java Security Topics (JavaGDL Community)</li>
+      <li><strong>2016</strong></li>
+      <ul>
+        <li>Java Web Technologies (Toshiba GCS)</li>
+      </ul>
+      <li><strong>2015</strong></li>
+      <ul>
+        <li>Las Internetas - Presentation of the CoC (Campus Party)</li>
+        <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party)</li>
+        <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
+        <li>Google I/O 2015 Experience (Tech Women Community)</li>
+        <li>Spring- MVC Moduel & Project 101 (Tech Women Community)</li>
+      </ul>
+      <li><strong>2014</strong></li>
+      <ul>
+        <li>Spring 3.0 - MVC Moduel & Project 101 (JavaGDL Community)</li>
+        <li>Strings, I/O, Formatting, and Parsing - Chapter for a OCJP course (Toshiba GCS)</li>
+      </ul>
+      <li><strong>2013</strong></li>
+      <ul>
+        <li>Java Security Topics (JavaGDL Community)</li>
+      </ul>
     </ul>
   </div>
 </div>
 
-<!--<div class="panel panel-primary">
+<div class="panel panel-primary">
   <div class="panel-heading">
-    <h2>Courses & Certifications</h2>
+    <h2>Interests</h2>
   </div>      
   <div class="panel-body">
-    <div>
-      <div class="page-header">
-          <h3 id="timeline">Courses & Certifications</h3>
-      </div>
-      <ul class="timeline">
-          <li>
-            <div class="timeline-badge success"><i>2015</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">M101J: MongoDB for Java Developers</h4>
-                <p><small class="text-muted"><i></i> September</small></p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Java SE 8 Lambdas and Streams</h4>
-                <p><small class="text-muted"><i></i> October</small></p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge primary"><i>2014</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Oracle Certified Expert, Java EE 6 Web Services Developer</h4>
-                <p><small class="text-muted"><i></i> April</small></p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Oracle Certified Expert, Java EE 6 Web Component Developer </h4>
-                <p><small class="text-muted"><i></i> June</small></p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge danger"><i>2013</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Oracle Certified Professional, Java SE 6 Programmer</h4>
-                <p><small class="text-muted"><i></i> November</small></p>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </div>
-  </div>-->
+    <p>I'm interested in ... (learning some of them)</p>
+    <ul>
+      <li>New JS frameworks: React.js, AngualarJS</li>
+      <li>Different programming languages: Scala, go, python, JS using Node.js</li>
+      <li>MEAN stack</li>
+      <li>NoSQL-DB: MongoDB</li>
+      <li>IoT</li>
+      <li>Reactive Systems</li>
+      <li>Test Driven Development</li>
+      <li>Microservices</li>
+      <li>Functional Programming</li>
+    </ul>
+  </div>
+</div>
 </div>
