@@ -27,7 +27,7 @@ menu        = "main"
 	<p>&nbsp;</p>
   <h3>My Career</h3>
   <p>
-  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in Java GDL community.  
+  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in the Java GDL community.  
   </p><br/>
 </div>
 
@@ -43,7 +43,7 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Toshiba GCS </h4>
-                <p><small class="text-muted"><i></i> since March 2013 (2 years, 11 months) Current</small></p>
+                <p><small class="text-muted"><i></i> since March 2013 (3 years, 1 month) Current</small></p>
               </div>
               <div class="timeline-body">
                 Development of enterprise applications<br/><br/>
@@ -53,7 +53,7 @@ menu        = "main"
                 <div id="refT1" class="panel panel-default collapse">
                   <div class="panel-body">
                     <ul>
-                      <li>Development & manintenance of a midleware solution to communicate the retail store applications with an external hosts</li>
+                      <li>Development & maintenance of a middleware solution to communicate the retail store applications with an external hosts</li>
                       <li>Development of a Java embedded Messaging broker allowing bidirectional broker-to-broker communication</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
@@ -94,7 +94,7 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Tech Women Community</h4>
-                <p><small class="text-muted"><i></i> March 2014 (1 year, 10 months) Current</small></p>
+                <p><small class="text-muted"><i></i> March 2014 (2 years, 1 month) Current</small></p>
               </div>
               <div class="timeline-body">
                 <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#refTWC1">
@@ -141,7 +141,7 @@ menu        = "main"
                       <li>Development of new configuration and execution components for a web application used and administered by a bank to authorize credits.</li>
                       <li><strong>back-end Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernet</li> 
+                        <li>JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernate</li> 
                         <li>OS: Fedora, Suse Enterprise, Ubuntu</li>
                         <li>Application Servers: Tomcat, WebSphere, Glassfish </li>
                       </ul>
@@ -187,7 +187,7 @@ menu        = "main"
                       <li>Analysis, design and development of an accounting application under the Java platform (JSE), using design patterns, OO programming</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>UML Modeling: Visual Paradigmn, Visio</li>
+                        <li>UML Modeling: Visual Paradigm, Visio</li>
                         <li>Reports in CrystalReports</li>
                         <li>DDL and DML in SQLServer using stored procedures, functions, views, triggers</li>
                       </ul>
