@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on MarceStarlet</title>
+    <link>http://marcestarlet.github.io/tags/java/</link>
+    <description>Recent content in Java on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
+    <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
+    <lastBuildDate>Sun, 17 Apr 2016 18:51:49 -0500</lastBuildDate>
+    <atom:link href="http://marcestarlet.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+        
+          <item>
+            <title>Messaging Systems</title>
+            <link>http://marcestarlet.github.io/blog/2016/04/17/messaging-systems/</link>
+            <pubDate>Sun, 17 Apr 2016 18:51:49 -0500</pubDate>
+            <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+            <guid>http://marcestarlet.github.io/blog/2016/04/17/messaging-systems/</guid>
+            <description>
+
+&lt;h1 id=&#34;what-messaging-system-means:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;What &amp;ldquo;Messaging System&amp;rdquo; means?&lt;/h1&gt;
+
+&lt;p&gt;The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.&lt;/p&gt;
+
+&lt;p&gt;A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, &lt;strong&gt;How the enterprise can do this?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Messaging&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Messaging allows the enterprise to share data from applications that have been built in different platforms and uses different kind of data by transforming the data in a common customized or not customized format and transferring the packed data between the applications. In a reliably, asynchronously, frequent and immediate transfer way, a Messaging System improves the enterprise communication.&lt;/p&gt;
+
+&lt;p&gt;Messaging makes applications loosely coupled and with an asynchronous sending, the applications do not need to be running at the same time in ordert to transfer data, so this does the enterprise more reliable. Messaging delegtes &amp;ldquo;&lt;strong&gt;&lt;em&gt;messagging systems&lt;/em&gt;&lt;/strong&gt;&amp;rdquo; the responsibility of transfer the data between applications, so the applications do not need to worry about how the data is transfered but they worry about what data shold be transfer.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://marcestarlet.github.io/img/Messaging.png&#34; alt=&#34;Messaging&#34;/&gt;
+&lt;/p&gt;
+                               
+
+&lt;p&gt;In order to transfer the data from different applications an EMS is needed. An &lt;strong&gt;EMS&lt;/strong&gt; (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.&lt;/p&gt;
+
+&lt;p&gt;So at the end, a MOM (Message-Oriented Middleware) software solution is required to support sending and receiving messages in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.&lt;/p&gt;
+
+&lt;p&gt;A robust MOM it is not always necessary, so far for many of the current systems that pretend to be simple but powerful, an answer to the new lightweight demands a &lt;strong&gt;&lt;em&gt;Message Broker&lt;/em&gt;&lt;/strong&gt; it is enough to cover the message communication for the enterprise.&lt;/p&gt;
+
+&lt;p&gt;A &lt;em&gt;Message Broker&lt;/em&gt; is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver. A message broker is an architectural pattern for message validation, transformation and routing.[1] It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.&lt;/p&gt;
+
+&lt;p&gt;The purpose of a broker is to take incoming messages from applications and perform some action on them. The following are examples of actions that might be taken in by the broker:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Route messages to one or more of many destinations&lt;/li&gt;
+&lt;li&gt;Transform messages to an alternative representation&lt;/li&gt;
+&lt;li&gt;Perform message aggregation, decomposing messages into multiple messages and sending them to their destination, then recomposing the responses into one message to return to the user&lt;/li&gt;
+&lt;li&gt;Interact with an external repository to augment a message or store it&lt;/li&gt;
+&lt;li&gt;Invoke Web services to retrieve data&lt;/li&gt;
+&lt;li&gt;Respond to events or errors&lt;/li&gt;
+&lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://marcestarlet.github.io/img/MessageBroker.png&#34; alt=&#34;Message Broker&#34;/&gt;
+&lt;/p&gt;
+                                
+
+&lt;p&gt;These are some of the most popular Message Brokers: Apache ActiveMQ, RabbitMQ, HiveMQ, Apache Kafka.&lt;/p&gt;
+
+&lt;h3 id=&#34;where-a-messaging-systems-should-be-used:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
+
+&lt;p&gt;As many of the systems and software solutions you can&amp;rsquo;t apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In an enterprise that necessary require a reliable communication between applications.&lt;/li&gt;
+&lt;li&gt;In distributed systems that wants to communicate data from different endpoints.&lt;/li&gt;
+&lt;li&gt;When have different applications that only must to be worried about what data will be transferred and don&amp;rsquo;t care how it is transferred.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some examples where a Messaging System is used: Apache TomEE, Eclipse, Whatsapp, etc.&lt;/p&gt;
+</description>
+          </item>
+        
+      
+    
+  </channel>
+</rss>
