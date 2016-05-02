@@ -1,5 +1,5 @@
 +++
-title      = "MQTT" 
+title      = "MQTT - Introduction" 
 tags       = ["mqtt", "IoT", "protocols", "communication"] 
 categories = ["development","IoT", "messaging"] 
 date       = "2016-01-14" 

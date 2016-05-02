@@ -1,5 +1,5 @@
 +++
-title = "MQTT-2" 
+title = "MQTT - The protocol" 
 tags = ["mqtt", "IoT", "protocols", "communication"] 
 categories = ["development","IoT", "messaging"] 
 date = "2016-01-21" 
@@ -34,7 +34,9 @@ Advantages of this pattern:
 
 **MQTT takes advantages of all of these characterístics of the pub/sub pattern.**
 
-![Take it from HiveMQ MQTT blog](/img/hivemq_ps.png "Pub/Sub example")
+<p align="center">
+  <img src="/img/MQTTExample.png" alt="Pub/Sub example"/>
+</p>
 
 *This fragment was taken from the HiveMQ MQTT blog documentation* [HiveMQ Pub/Sub](http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe "hivemq").
 

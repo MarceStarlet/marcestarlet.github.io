@@ -7,8 +7,119 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
     <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
-    <lastBuildDate>Sun, 17 Apr 2016 18:51:49 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://marcestarlet.github.io/categories/messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+      
+        
+          <item>
+            <title>MQTT - Concepts &amp; Usage</title>
+            <link>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</link>
+            <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+            <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+            <guid>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</guid>
+            <description>
+
+&lt;h2 id=&#34;mqtt-concepts-usage:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;MQTT - Concepts &amp;amp; Usage&lt;/h2&gt;
+
+&lt;p&gt;The last part of this serie of posts about MQTT will cover some concepts about the protocol that essentialy will show us the boundaries of the protocol and how it handles the connections between clients and the broker.&lt;/p&gt;
+
+&lt;h3 id=&#34;connection:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;Connection&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start by defining the &lt;strong&gt;MQTT Connection&lt;/strong&gt;. The connection initiates when a client sends a &lt;em&gt;CONNECT&lt;/em&gt; message to the broker, then the broker responds with a &lt;em&gt;CONNACK&lt;/em&gt; and a status code.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://marcestarlet.github.io/img/Connection.png&#34; alt=&#34;MQTT Connection&#34;/&gt;
+&lt;/p&gt;
+               
+
+&lt;p&gt;Once the connections is established the broker will keep the connection until the client send a disconnect command or it losses the connection.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;CONNECT&lt;/strong&gt; message include some information relative to an implementer of a MQTT library than the users that will use the library, here I&amp;rsquo;ll present to you the basic information relevant for the users.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;clientId&lt;/strong&gt;&lt;br /&gt;
+The &lt;em&gt;clientId&lt;/em&gt; is an identifier for each MQTT Client, this means that should be unique for each client connected to the broker indicating that it must keep the state for that client. Since MQTT version 3.1.1, it is possible to connect without a clientId so the broker won&amp;rsquo;t keep the state.
+If you use clientId you should set cleanSession to true, otherwise the connection will be refused.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cleanSession&lt;/strong&gt;&lt;br /&gt;
+The &lt;em&gt;cleanSession&lt;/em&gt; flag indicates to the broker whether the client wants to establish a persistent session or not. If cleanSession is set to false, it means that the broker will stores all the subscriptions of the client as well as all the messages that do not arrived to the client as long as the QoS has been defined as 1 o 2. If cleanSession is set to true, the broker won&amp;rsquo;t store anything for the client, non the subscriptions neither the missed messages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;username/password&lt;/strong&gt; (optional)&lt;br /&gt;
+The &lt;em&gt;username&lt;/em&gt; and &lt;em&gt;password&lt;/em&gt; are used for authentication and authorization. It is recommended to encrypt the password.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;keepAlive&lt;/strong&gt;&lt;br /&gt;
+The &lt;em&gt;keepAlive&lt;/em&gt; is a time interval, the clients commits to by sending regular PING Request messages to the broker. The broker response with PING Response and this mechanism will allow both sides to determine if the other one is still alive and reachable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When the broker obtains the CONNECT it responds with a &lt;strong&gt;CONNACK&lt;/strong&gt; message that only contains two data entries.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;sessionPresent&lt;/strong&gt;&lt;br /&gt;
+This flag indicates to the client wheter the broker has a persistent session or not. If the client in a previous connection set the cleanSession to false then this flag is true, otherwise is false.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;returnCode&lt;/strong&gt;&lt;br /&gt;
+This flags lets the client know if the connection attemp was successfull or not, and if not, it indicates what the issue is.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;publish:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;Publish&lt;/h3&gt;
+
+&lt;p&gt;The publish action allows a client to send messages to a topic destination in different modes, but always with a payload, and due MQTT is a data agnostic, you can set to the payload the &lt;em&gt;data&lt;/em&gt; you want for the case you need. The publish message have some attributes, listed bellow the most important:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Topic Name&lt;/strong&gt;, the name of the topic destination to publish in the broker&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;QoS&lt;/strong&gt;, the &amp;ldquo;Quality of Service&amp;rdquo; in which you want to send a message. It is used to define the
+guarantee of a message. The possible values are 0, 1 or 2. See more about the QoS in the next section.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retain Flag&lt;/strong&gt;, this flag instructs the broker to retain the &lt;em&gt;last&lt;/em&gt; message sent for those new subscribers in order to receive the retained message in a new conenction to the broker. This could be usefull if you have a notification for new subscribers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Payload&lt;/strong&gt;, is the content of the message. As commented before MQTT is data agnostic so you can send any kind of message (image, binary, text).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Packed ID&lt;/strong&gt;, is a unique identifier between the client and brokre that identifies the message during the message flow.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dup Flag&lt;/strong&gt;, indicates that a message is duplicate because the last message sent was not acknowledged, so the message will be resent. This flag is taking in account when QoS 1 or 2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each publisher is responsible of the send of the message to the broker, once the broker receives the message it is now responsible to publish the message to the subscribers.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://marcestarlet.github.io/img/Publish.png&#34; alt=&#34;Publish&#34;/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here the code of a MQTT Client - Publisher using the Paho API&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;try {
+    // set default memory persistence in case QoS is 1 or 2
+    MemoryPersistence persistence = new MemoryPersistence();
+    // create new MQTT Client using URI, CLientID and persistence
+    MqttClient samplePublisher = new MqttClient(getUri(), getClientId(), persistence);
+    // create MQTT Options to set the connection attributes
+    MqttConnectOptions options = new MqttConnectOptions();
+    // default cleanSession is set to true to indicate the broker to don&#39;t keep session
+    // change to false if you want the broke keep a session
+    options.setCleanSession(true);
+    logger.info(&amp;quot;Connecting to: {}&amp;quot;, getUri());
+    // establish a connection 
+    // a CONNECT is sent and the broker should respond with a CONNACK
+    samplePublisher.connect(options);
+
+    // create new MQTT message
+    MqttMessage message = new MqttMessage();
+    // the payload is the content of a message 
+    message.setPayload(getPayload().getBytes());
+    logger.info(&amp;quot;Publishing message {} to {} topic&amp;quot;, getPayload(), getTopic());
+    // publish the message to the Topic indicated
+    samplePublisher.publish(getTopic(), message);
+    logger.info(&amp;quot;Message sent, disconnecting client&amp;quot;);
+    // disconnect
+    samplePublisher.disconnect();
+
+} catch (MqttException e) {
+    // handle exception
+    logger.error(&amp;quot;reason &amp;quot;, e.getReasonCode());
+    logger.error(&amp;quot;msg &amp;quot;, e.getMessage());
+    logger.error(&amp;quot;loc &amp;quot;, e.getLocalizedMessage());
+    logger.error(&amp;quot;cause &amp;quot;, e.getCause());
+    logger.error(&amp;quot;excep &amp;quot;, e);
+    logger.error(&amp;quot;trace&amp;quot;, (Object[])e.getStackTrace());
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+          </item>
+        
+      
     
       
         
@@ -83,11 +194,11 @@
       
         
           <item>
-            <title>MQTT-2</title>
-            <link>http://marcestarlet.github.io/blog/2016/01/21/mqtt-2/</link>
+            <title>MQTT - The protocol</title>
+            <link>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</link>
             <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
             <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
-            <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt-2/</guid>
+            <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</guid>
             <description>
 
 &lt;h2 id=&#34;mqtt-the-protocol:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;MQTT - The protocol&lt;/h2&gt;
@@ -125,7 +236,9 @@ In telecommunications, a communications protocol is a system of rules that allow
 
 &lt;p&gt;&lt;strong&gt;MQTT takes advantages of all of these characterístics of the pub/sub pattern.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://marcestarlet.github.io/img/hivemq_ps.png&#34; alt=&#34;Take it from HiveMQ MQTT blog&#34; title=&#34;Pub/Sub example&#34; /&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;http://marcestarlet.github.io/img/MQTTExample.png&#34; alt=&#34;Pub/Sub example&#34;/&gt;
+&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This fragment was taken from the HiveMQ MQTT blog documentation&lt;/em&gt; &lt;a href=&#34;http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe&#34; title=&#34;hivemq&#34;&gt;HiveMQ Pub/Sub&lt;/a&gt;.&lt;/p&gt;
 
@@ -170,11 +283,11 @@ In telecommunications, a communications protocol is a system of rules that allow
       
         
           <item>
-            <title>MQTT</title>
-            <link>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</link>
+            <title>MQTT - Introduction</title>
+            <link>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</link>
             <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
             <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
-            <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</guid>
+            <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</guid>
             <description>
 
 &lt;h2 id=&#34;introduction:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;INTRODUCTION&lt;/h2&gt;

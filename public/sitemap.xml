@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://marcestarlet.github.io/</loc>
-    <lastmod>2016-04-17T18:51:49-05:00</lastmod>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,12 +18,12 @@
   </url>
   
   <url>
-    <loc>http://marcestarlet.github.io/blog/2016/01/21/mqtt-2/</loc>
+    <loc>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</loc>
     <lastmod>2016-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://marcestarlet.github.io/blog/2016/01/14/mqtt/</loc>
+    <loc>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</loc>
     <lastmod>2016-01-14T00:00:00+00:00</lastmod>
   </url>
   
