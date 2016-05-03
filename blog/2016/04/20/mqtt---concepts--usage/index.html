@@ -154,11 +154,12 @@ guarantee of a message. The possible values are 0, 1 or 2. See more about the Qo
 
 <p>Here the code of a MQTT Client - Publisher using the Paho API</p>
 
-<pre><code>try {
+<pre><code>MqttClient samplePublisher = null;
+try {
     // set default memory persistence in case QoS is 1 or 2
     MemoryPersistence persistence = new MemoryPersistence();
     // create new MQTT Client using URI, CLientID and persistence
-    MqttClient samplePublisher = new MqttClient(getUri(), getClientId(), persistence);
+    samplePublisher = new MqttClient(getUri(), getClientId(), persistence);
     // create MQTT Options to set the connection attributes
     MqttConnectOptions options = new MqttConnectOptions();
     // default cleanSession is set to true to indicate the broker to don't keep session
@@ -182,14 +183,99 @@ guarantee of a message. The possible values are 0, 1 or 2. See more about the Qo
 
 } catch (MqttException e) {
     // handle exception
-    logger.error(&quot;reason &quot;, e.getReasonCode());
-    logger.error(&quot;msg &quot;, e.getMessage());
-    logger.error(&quot;loc &quot;, e.getLocalizedMessage());
-    logger.error(&quot;cause &quot;, e.getCause());
-    logger.error(&quot;excep &quot;, e);
-    logger.error(&quot;trace&quot;, (Object[])e.getStackTrace());
+    logger.error(&quot;Error while publishing&quot;);
+    logger.error(&quot;Reason &quot;, e.getReasonCode());
+    logger.error(&quot;Message &quot;, e.getMessage());
+    logger.error(&quot;Localized Message &quot;, e.getLocalizedMessage());
+    logger.error(&quot;Cause &quot;, e.getCause());
+    logger.error(&quot;Exception &quot;, e);
+    logger.error(&quot;StackTrace&quot;, (Object[])e.getStackTrace());
+} finally { 
+    if(null != samplePublisher) {
+        try {
+            samplePublisher.disconnect();
+        } catch (MqttException e) {
+            logger.error(&quot;Error while disconnecting&quot;,e);
+        }
+    }
 }
 </code></pre>
+
+<p><a href="https://goo.gl/dJBp8R" title="MarceStarlet Github - MQTTPahoPublisher">Complete code</a></p>
+
+<h3 id="subscribe:7f40dd5983eef10f10ba3b4412c0b08b">Subscribe</h3>
+
+<p>A subscription is when a MQTT client susbcribes to a Topic in a Broker with a specific QoS, in order to receive the messages that a puslisher send to the topic where is subscribed. A subscription consists of a <strong>SUBSCRIBE</strong> message that has a packed identifier and a list of subscriptions as attributes.</p>
+
+<ul>
+<li><strong>Packed ID</strong>, is a unique identifier between the client and brokre that identifies the message during the message flow.</li>
+<li><strong>List of Subscriptions</strong>, contains an indetermined subscriptions that are formed of Topic and QoS pairs. The Topic attribute could be a wildcard that makes the client able to subscribe to some topic patterns.</li>
+</ul>
+
+<p>Then, the broker responds with a <strong>SUBACK</strong> message that has the same Packed Identifiers as the SUBSCRIBE message and a list of return codes.</p>
+
+<p>The SUBACK contains a return code per each subscription in the SUBSCRIBE message. When a topic is overlapped, then the highest QoS is taken for the delivering of the message.</p>
+
+<p align="center">
+  <img src="/img/Subscribe.png" alt="Subscribe"/>
+</p>
+
+<p>Here the code of a MQTT Client - Subscriber using the Paho API</p>
+
+<pre><code>// the class must implement MqttCallback
+
+MqttClient sampleSubscriber = null;
+try {
+    // set default memory persistence in case QoS is 1 or 2
+    MemoryPersistence persistence = new MemoryPersistence();
+    // create new MQTT Client using URI, CLientID and persistence
+    sampleSubscriber = new MqttClient(getUri(), getClientId(), persistence);
+    // create MQTT Options to set the connection attributes
+    MqttConnectOptions options = new MqttConnectOptions();
+    // default cleanSession is set to true to indicate the broker to don't keep session
+    // change to false if you want the broke keep a session
+    options.setCleanSession(true);
+    // set 30 sec of keepAlive
+    options.setKeepAliveInterval(30);
+
+    logger.info(&quot;Connecting to: {}&quot;, getUri());
+    // establish a connection 
+    // a CONNECT is sent and the broker should respond with a CONNACK
+    sampleSubscriber.connect(options);
+    // set an asynchronous receive
+    sampleSubscriber.setCallback(this);
+
+    // subscribe to the Topic and QoS indicated 
+    sampleSubscriber.subscribe(getTopic(), getQos());
+    logger.info(&quot;Subscribed and waiting ...&quot;);
+
+} catch (MqttException e) {
+    // handle exception
+    logger.error(&quot;Error while susbcribing&quot;);
+    logger.error(&quot;Reason &quot;, e.getReasonCode());
+    logger.error(&quot;Message &quot;, e.getMessage());
+    logger.error(&quot;Localized Message &quot;, e.getLocalizedMessage());
+    logger.error(&quot;Cause &quot;, e.getCause());
+    logger.error(&quot;Exception &quot;, e);
+    logger.error(&quot;StackTrace&quot;, (Object[])e.getStackTrace());
+} finally { 
+    if(null != sampleSubscriber) {
+        try {
+            sampleSubscriber.disconnect();
+        } catch (MqttException e) {
+            logger.error(&quot;Error while disconnecting&quot;,e);
+        }
+    }
+}
+
+@Override
+public void messageArrived(String topic, MqttMessage message)
+        throws Exception {
+    logger.info(&quot;Message arrived: {}&quot;, new String(message.getPayload()));   
+}
+</code></pre>
+
+<p><a href="https://goo.gl/11nddj" title="MarceStarlet Github - MQTTPahoSubscriber">Complete code</a></p>
 
 		</div>
 	</div>
