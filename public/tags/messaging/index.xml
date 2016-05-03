@@ -64,6 +64,8 @@
 
 &lt;p&gt;These are some of the most popular Message Brokers: Apache ActiveMQ, RabbitMQ, HiveMQ, Apache Kafka.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&#34;https://goo.gl/hQenrh&#34; title=&#34;MarceStarlet Github - EmbeddedBroker&#34;&gt;ActiveMQ Message Broker example code&lt;/a&gt;&lt;/p&gt;
+
 &lt;h3 id=&#34;where-a-messaging-systems-should-be-used:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
 
 &lt;p&gt;As many of the systems and software solutions you can&amp;rsquo;t apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:&lt;/p&gt;

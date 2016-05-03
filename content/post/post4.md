@@ -47,6 +47,8 @@ The purpose of a broker is to take incoming messages from applications and perfo
                                 
 These are some of the most popular Message Brokers: Apache ActiveMQ, RabbitMQ, HiveMQ, Apache Kafka.
 
+[ActiveMQ Message Broker example code](https://goo.gl/hQenrh "MarceStarlet Github - EmbeddedBroker")
+
 ### Where a Messaging Systems should be used?
                    
 As many of the systems and software solutions you can't apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:
