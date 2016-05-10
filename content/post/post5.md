@@ -93,14 +93,6 @@ Here the code of a MQTT Client - Publisher using the Paho API
 		logger.error("Cause ", e.getCause());
 		logger.error("Exception ", e);
 		logger.error("StackTrace", (Object[])e.getStackTrace());
-	} finally { 
-		if(null != samplePublisher) {
-			try {
-				samplePublisher.disconnect();
-			} catch (MqttException e) {
-				logger.error("Error while disconnecting",e);
-			}
-		}
 	}
 
 [Complete code](https://goo.gl/dJBp8R "MarceStarlet Github - MQTTPahoPublisher")
@@ -157,15 +149,7 @@ Here the code of a MQTT Client - Subscriber using the Paho API
 		logger.error("Cause ", e.getCause());
 		logger.error("Exception ", e);
 		logger.error("StackTrace", (Object[])e.getStackTrace());
-	} finally { 
-		if(null != sampleSubscriber) {
-			try {
-				sampleSubscriber.disconnect();
-			} catch (MqttException e) {
-				logger.error("Error while disconnecting",e);
-			}
-		}
-	}
+	} 
 
 	@Override
 	public void messageArrived(String topic, MqttMessage message)
