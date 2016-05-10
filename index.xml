@@ -116,14 +116,6 @@ try {
     logger.error(&amp;quot;Cause &amp;quot;, e.getCause());
     logger.error(&amp;quot;Exception &amp;quot;, e);
     logger.error(&amp;quot;StackTrace&amp;quot;, (Object[])e.getStackTrace());
-} finally { 
-    if(null != samplePublisher) {
-        try {
-            samplePublisher.disconnect();
-        } catch (MqttException e) {
-            logger.error(&amp;quot;Error while disconnecting&amp;quot;,e);
-        }
-    }
 }
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -184,15 +176,7 @@ try {
     logger.error(&amp;quot;Cause &amp;quot;, e.getCause());
     logger.error(&amp;quot;Exception &amp;quot;, e);
     logger.error(&amp;quot;StackTrace&amp;quot;, (Object[])e.getStackTrace());
-} finally { 
-    if(null != sampleSubscriber) {
-        try {
-            sampleSubscriber.disconnect();
-        } catch (MqttException e) {
-            logger.error(&amp;quot;Error while disconnecting&amp;quot;,e);
-        }
-    }
-}
+} 
 
 @Override
 public void messageArrived(String topic, MqttMessage message)
