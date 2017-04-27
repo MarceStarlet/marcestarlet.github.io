@@ -20,7 +20,7 @@
             <guid>http://marcestarlet.github.io/blog/2016/04/17/messaging-systems/</guid>
             <description>
 
-&lt;h1 id=&#34;what-messaging-system-means:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;What &amp;ldquo;Messaging System&amp;rdquo; means?&lt;/h1&gt;
+&lt;h1 id=&#34;what-messaging-system-means&#34;&gt;What &amp;ldquo;Messaging System&amp;rdquo; means?&lt;/h1&gt;
 
 &lt;p&gt;The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.&lt;/p&gt;
 
@@ -54,7 +54,8 @@
 &lt;li&gt;Interact with an external repository to augment a message or store it&lt;/li&gt;
 &lt;li&gt;Invoke Web services to retrieve data&lt;/li&gt;
 &lt;li&gt;Respond to events or errors&lt;/li&gt;
-&lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p align=&#34;center&#34;&gt;
@@ -66,14 +67,15 @@
 
 &lt;p&gt;&lt;a href=&#34;https://goo.gl/hQenrh&#34; title=&#34;MarceStarlet Github - EmbeddedBroker&#34;&gt;ActiveMQ Message Broker example code&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;where-a-messaging-systems-should-be-used:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
+&lt;h3 id=&#34;where-a-messaging-systems-should-be-used&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
 
 &lt;p&gt;As many of the systems and software solutions you can&amp;rsquo;t apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;In an enterprise that necessary require a reliable communication between applications.&lt;/li&gt;
 &lt;li&gt;In distributed systems that wants to communicate data from different endpoints.&lt;/li&gt;
-&lt;li&gt;When have different applications that only must to be worried about what data will be transferred and don&amp;rsquo;t care how it is transferred.&lt;/li&gt;
+&lt;li&gt;When have different applications that only must to be worried about what data will be transferred and don&amp;rsquo;t care how it is transferred.
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Some examples where a Messaging System is used: Apache TomEE, Eclipse, Whatsapp, etc.&lt;/p&gt;

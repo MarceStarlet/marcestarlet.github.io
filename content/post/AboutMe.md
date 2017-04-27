@@ -13,10 +13,10 @@ menu        = "main"
 	</div>
 	<div>
 		<p>
-			My name is <strong>Marcela Sena</strong> and I'm from Tepic in Nayarit, Mexico. 
+			My name is <strong>Marcela Sena</strong> and I'm from Tepic in Nayarit, Mexico.
 		</p>
 		<p>
-			I currently live and work in Guadalajara, Jalisco. I'm a Software Engineer passionate for programming, learn new stuffs, diversity in IT, movies, music, running, hiking and my dog; her name is Frida like the mexican painter Frida Kahlo.
+			I currently live and work in Guadalajara, Jalisco. I'm a Software Engineer passionate for programming, learn new stuffs, diversity in IT, movies, music, anime, running, hiking and my dog; her name is Frida like the mexican painter Frida Kahlo.
 	    </p>
 	    <p>
 			I love rainy afternoons and a delicious cup of coffee in the morning with a piece of sweet bread (my favorite is the cappuccino). I really enjoy walk along to a park, mountain or the city as well as I love running while I listen to music. Teaching others and sharing my knowledge is exciting to me because I feel I can change the world, even if I share my thoughts.
@@ -27,7 +27,7 @@ menu        = "main"
 	<p>&nbsp;</p>
   <h3>My Career</h3>
   <p>
-  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 6 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and current leader of the Tech Women Community and an active participant in the Java GDL community.  
+  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 7 years of experience in Java development (JSE & JEE), web applications and enterprise applications. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and organizer of the Tech Women Community and an active participant in the Java GDL community.  
   </p><br/>
 </div>
 
@@ -43,30 +43,47 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Toshiba GCS </h4>
-                <p><small class="text-muted"><i></i> since March 2013 (3 years, 1 month) Current</small></p>
+                <p><small class="text-muted"><i></i> since March 2013 (3 years, 8 months) Current</small></p>
               </div>
               <div class="timeline-body">
                 Development of enterprise applications<br/><br/>
-                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT1">
-                  Middleware Solutions, Messaging Brokers
+								<button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT1">
+                  Web POS Application
                 </button>
                 <div id="refT1" class="panel panel-default collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li>Development & maintenance of a web pos application</li>
+                      <li>Development of the POS UI elements and widgets</li>
+											<li>Development of the POS Controller components, routes, querys</li>
+                      <li><strong>Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>Javascript, dojo, Java, Spring, Camel, JMS, xml, json</li>
+                        <li>ActiveMQ</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div><br/><br/>
+                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT2">
+                  Middleware Solutions, Messaging Brokers
+                </button>
+                <div id="refT2" class="panel panel-default collapse">
                   <div class="panel-body">
                     <ul>
                       <li>Development & maintenance of a middleware solution to communicate the retail store applications with an external hosts</li>
                       <li>Development of a Java embedded Messaging broker allowing bidirectional broker-to-broker communication</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>JMS, MQJMS, MQTT, JSE & JEE, Spring, Camel, slf4j, jaxb, xml, xslt, xsd</li> 
+                        <li>JMS, MQJMS, MQTT, JSE & JEE, Spring, Camel, slf4j, jaxb, xml, xslt, xsd</li>
                         <li>ActiveMQ, Moquette, Mosquito, WebSphereMQ, Micro Broker, KahaDB </li>
                       </ul>
                     </ul>
                   </div>
                 </div><br/><br/>
-                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT2">
+                <button class="btn btn-responsive btn-danger btn-sm" data-toggle="collapse" data-target="#refT3">
                   Web Application
                 </button>
-                <div id="refT2" class="panel collapse">
+                <div id="refT3" class="panel collapse">
                   <div class="panel-body">
                     <ul>
                       <li>Development of a Web Application for the HR area that evaluates interviews</li>
@@ -80,7 +97,7 @@ menu        = "main"
                       </ul>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>JEE, Spring JDBC, Spring MVC, DAO, AngularJS, CSS, Bootstrap, git</li> 
+                        <li>JEE, Spring JDBC, Spring MVC, DAO, AngularJS, CSS, Bootstrap, git</li>
                         <li>Tomcat, Suse Enterprise, MySQL</li>
                       </ul>
                     </ul>
@@ -94,15 +111,22 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Tech Women Community</h4>
-                <p><small class="text-muted"><i></i> March 2014 (2 years, 1 month) Current</small></p>
+                <p><small class="text-muted"><i></i> March 2014 (2 years, 7 months) Current</small></p>
               </div>
               <div class="timeline-body">
                 <button class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#refTWC1">
-                  Co-Founder, Leader
+                  Co-Founder, Organizer
                 </button>
                 <div id="refTWC1" class="collapse">
                     <ul>
-                      <li>Current Leader</li>
+                      <li>Organizer</li>
+											<li><strong>Activities</strong><br/></li>
+                      <ul>
+                        <li>Events and Meetups Logistics</li>
+                        <li>Speaker</li>
+                        <li>Focal point for Speakers</li>
+                      </ul>
+											<li>Ex-leader</li>
                       <li><strong>Activities</strong><br/></li>
                       <ul>
                         <li>Leadership</li>
@@ -141,17 +165,17 @@ menu        = "main"
                       <li>Development of new configuration and execution components for a web application used and administered by a bank to authorize credits.</li>
                       <li><strong>back-end Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernate</li> 
+                        <li>JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernate</li>
                         <li>OS: Fedora, Suse Enterprise, Ubuntu</li>
                         <li>Application Servers: Tomcat, WebSphere, Glassfish </li>
                       </ul>
                       <li><strong>front-end Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>jQuery, SiteMesh, HTML, CSS </li> 
+                        <li>jQuery, SiteMesh, HTML, CSS </li>
                       </ul>
                       <li><strong>DB Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>PL/SQL, SQL: Store Procedures, Jobs</li> 
+                        <li>PL/SQL, SQL: Store Procedures, Jobs</li>
                         <li>SQLDeveloper, SQLServer, pgAdmin</li>
                       </ul>
                     </ul>
@@ -164,7 +188,7 @@ menu        = "main"
                       <li>Development & Design of the Web Services for a "Credit Card Application"</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
-                        <li>SOAP, SoapUI</li> 
+                        <li>SOAP, SoapUI</li>
                       </ul>
                     </ul>
                 </div>
@@ -222,17 +246,26 @@ menu        = "main"
   </div>      
   <div class="panel-body">
     <ul>
+			<li><strong>2017</strong></li>
+			<ul>
+				<li>IoT - How to start? (TechWo)</li>		
+			</ul>
       <li><strong>2016</strong></li>
       <ul>
-        <li>Java Web Technologies (Toshiba GCS)</li>
+			  <li>MQTT for IoT & Mobile demo (UNIVA IoT Fest)</li>
+				<li>MQTT for IoT (TechWo)</li>
+				<li>Member of the Judge for the Highschool girls (TechnovationChallengeMx)</li>
+				<li>Java Web Technologies (Campus Party 7)</li>
+				<li>Hugo Framework (Campus Party 7)</li>
+        <li>Java Web Technologies (Toshiba GCS)</li>				
       </ul>
       <li><strong>2015</strong></li>
       <ul>
         <li>Las Internetas - Presentation of the CoC (Campus Party)</li>
         <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party)</li>
         <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
-        <li>Google I/O 2015 Experience (Tech Women Community)</li>
-        <li>Spring- MVC Moduel & Project 101 (Tech Women Community)</li>
+        <li>Google I/O 2015 Experience (TechWo)</li>
+        <li>Spring- MVC Moduel & Project 101 (TechWo)</li>
       </ul>
       <li><strong>2014</strong></li>
       <ul>
