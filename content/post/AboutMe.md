@@ -9,7 +9,7 @@ menu        = "main"
 <h3>This is me</h3>
 <div >
 	<div style="float: left; padding: 7px; 0px;">
-		<img src="/img/marce.png" alt="MarceStarlet" class="img-circle" heigh="170" width="170">
+		<img src="/img/marce.jpg" alt="MarceStarlet" class="img-circle" heigh="170" width="170">
 	</div>
 	<div>
 		<p>
@@ -248,7 +248,11 @@ menu        = "main"
     <ul>
 			<li><strong>2017</strong></li>
 			<ul>
-				<li>IoT - How to start? (TechWo)</li>		
+			  <li>MongoDB Workshop (Campus Party 8)</li>
+				<li>Actor Model with Akka (Campus Party 8)</li>
+				<li>Actor Model with Akka (Toshiba GCS)</li>
+				<li>MQTT & IoT (Toshiba GCS)</li>
+				<li>IoT - How to start? (TechWo)</li>
 			</ul>
       <li><strong>2016</strong></li>
       <ul>

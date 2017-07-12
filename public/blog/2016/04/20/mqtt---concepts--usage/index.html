@@ -94,11 +94,11 @@
 			<br>
 			
 
-<h2 id="mqtt-concepts-usage">MQTT - Concepts &amp; Usage</h2>
+<h2 id="mqtt-concepts-usage:7f40dd5983eef10f10ba3b4412c0b08b">MQTT - Concepts &amp; Usage</h2>
 
 <p>The last part of this serie of posts about MQTT will cover some concepts about the protocol that essentialy will show us the boundaries of the protocol and how it handles the connections between clients and the broker.</p>
 
-<h3 id="connection">Connection</h3>
+<h3 id="connection:7f40dd5983eef10f10ba3b4412c0b08b">Connection</h3>
 
 <p>Let&rsquo;s start by defining the <strong>MQTT Connection</strong>. The connection initiates when a client sends a <em>CONNECT</em> message to the broker, then the broker responds with a <em>CONNACK</em> and a status code.</p>
 
@@ -132,7 +132,7 @@ This flag indicates to the client wheter the broker has a persistent session or 
 This flags lets the client know if the connection attemp was successfull or not, and if not, it indicates what the issue is.</li>
 </ul>
 
-<h3 id="publish">Publish</h3>
+<h3 id="publish:7f40dd5983eef10f10ba3b4412c0b08b">Publish</h3>
 
 <p>The publish action allows a client to send messages to a topic destination in different modes, but always with a payload, and due MQTT is a data agnostic, you can set to the payload the <em>data</em> you want for the case you need. The publish message have some attributes, listed bellow the most important:</p>
 
@@ -195,7 +195,7 @@ try {
 
 <p><a href="https://goo.gl/dJBp8R" title="MarceStarlet Github - MQTTPahoPublisher">Complete code</a></p>
 
-<h3 id="subscribe">Subscribe</h3>
+<h3 id="subscribe:7f40dd5983eef10f10ba3b4412c0b08b">Subscribe</h3>
 
 <p>A subscription is when a MQTT client susbcribes to a Topic in a Broker with a specific QoS, in order to receive the messages that a puslisher send to the topic where is subscribed. A subscription consists of a <strong>SUBSCRIBE</strong> message that has a packed identifier and a list of subscriptions as attributes.</p>
 
@@ -275,7 +275,7 @@ public void messageArrived(String topic, MqttMessage message)
             <footer>
                 <div class="pull-left">
                     <p>
-                        &copy; 2015 ~ MarceStarlet ~ Powered By <a href="http://hugo.spf13.com">Hugo</a> - version: 0.16 ~ <a href="http://marcestarlet.github.io/license">License</a>
+                        &copy; 2015 ~ MarceStarlet ~ Powered By <a href="http://hugo.spf13.com">Hugo</a> - version: 0.15 ~ <a href="http://marcestarlet.github.io/license">License</a>
                     </p>
                 </div>
 
