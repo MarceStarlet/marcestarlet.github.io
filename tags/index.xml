@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on MarceStarlet</title>
+    <link>http://marcestarlet.github.io/tags/</link>
+    <description>Recent content in Tags on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
+    <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
+    <lastBuildDate>Thu, 14 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://marcestarlet.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2016</title>
+      <link>http://marcestarlet.github.io/tags/2016/</link>
+      <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/2016/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://marcestarlet.github.io/tags/about/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>http://marcestarlet.github.io/tags/code/</link>
+      <pubDate>Mon, 31 Oct 2016 15:17:30 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Communication</title>
+      <link>http://marcestarlet.github.io/tags/communication/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iot</title>
+      <link>http://marcestarlet.github.io/tags/iot/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://marcestarlet.github.io/tags/java/</link>
+      <pubDate>Sun, 17 Apr 2016 18:51:49 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jms</title>
+      <link>http://marcestarlet.github.io/tags/jms/</link>
+      <pubDate>Sun, 17 Apr 2016 18:51:49 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/jms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jms Patterns</title>
+      <link>http://marcestarlet.github.io/tags/jms-patterns/</link>
+      <pubDate>Sun, 17 Apr 2016 18:51:49 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/jms-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Messaging</title>
+      <link>http://marcestarlet.github.io/tags/messaging/</link>
+      <pubDate>Sun, 17 Apr 2016 18:51:49 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/messaging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mqtt</title>
+      <link>http://marcestarlet.github.io/tags/mqtt/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/mqtt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opinion</title>
+      <link>http://marcestarlet.github.io/tags/opinion/</link>
+      <pubDate>Thu, 27 Apr 2017 15:08:10 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programmers</title>
+      <link>http://marcestarlet.github.io/tags/programmers/</link>
+      <pubDate>Mon, 31 Oct 2016 15:17:30 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/programmers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>http://marcestarlet.github.io/tags/programming/</link>
+      <pubDate>Thu, 27 Apr 2017 15:08:10 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protocols</title>
+      <link>http://marcestarlet.github.io/tags/protocols/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/protocols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>http://marcestarlet.github.io/tags/skills/</link>
+      <pubDate>Thu, 27 Apr 2017 15:08:10 -0500</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>http://marcestarlet.github.io/tags/welcome/</link>
+      <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
+      <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
+      <guid>http://marcestarlet.github.io/tags/welcome/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
