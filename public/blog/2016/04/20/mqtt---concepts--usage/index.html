@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html class="no-js" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
    	
     
-        <link rel="stylesheet" href="http://marcestarlet.github.io/css/theme/flatly.css">
+        <link rel="stylesheet" href="http://marcestarlet.github.io/css/theme/cosmo.css">
     
 
     <link rel="stylesheet" href="http://marcestarlet.github.io/css/font-awesome.min.css">
@@ -28,9 +28,9 @@
     <script src="http://marcestarlet.github.io/js/bootstrap.min-3.3.5.js"></script>
 
     
-    <link href="" rel="alternate" type="application/rss+xml" title="MarceStarlet" />
+    
 </head>
-<body lang="en">
+<body lang="en-US">
     
     <div class="container">
     <div class="row">
@@ -94,11 +94,11 @@
 			<br>
 			
 
-<h2 id="mqtt-concepts-usage:7f40dd5983eef10f10ba3b4412c0b08b">MQTT - Concepts &amp; Usage</h2>
+<h2 id="mqtt-concepts-usage">MQTT - Concepts &amp; Usage</h2>
 
 <p>The last part of this serie of posts about MQTT will cover some concepts about the protocol that essentialy will show us the boundaries of the protocol and how it handles the connections between clients and the broker.</p>
 
-<h3 id="connection:7f40dd5983eef10f10ba3b4412c0b08b">Connection</h3>
+<h3 id="connection">Connection</h3>
 
 <p>Let&rsquo;s start by defining the <strong>MQTT Connection</strong>. The connection initiates when a client sends a <em>CONNECT</em> message to the broker, then the broker responds with a <em>CONNACK</em> and a status code.</p>
 
@@ -132,7 +132,7 @@ This flag indicates to the client wheter the broker has a persistent session or 
 This flags lets the client know if the connection attemp was successfull or not, and if not, it indicates what the issue is.</li>
 </ul>
 
-<h3 id="publish:7f40dd5983eef10f10ba3b4412c0b08b">Publish</h3>
+<h3 id="publish">Publish</h3>
 
 <p>The publish action allows a client to send messages to a topic destination in different modes, but always with a payload, and due MQTT is a data agnostic, you can set to the payload the <em>data</em> you want for the case you need. The publish message have some attributes, listed bellow the most important:</p>
 
@@ -195,7 +195,7 @@ try {
 
 <p><a href="https://goo.gl/dJBp8R" title="MarceStarlet Github - MQTTPahoPublisher">Complete code</a></p>
 
-<h3 id="subscribe:7f40dd5983eef10f10ba3b4412c0b08b">Subscribe</h3>
+<h3 id="subscribe">Subscribe</h3>
 
 <p>A subscription is when a MQTT client susbcribes to a Topic in a Broker with a specific QoS, in order to receive the messages that a puslisher send to the topic where is subscribed. A subscription consists of a <strong>SUBSCRIBE</strong> message that has a packed identifier and a list of subscriptions as attributes.</p>
 
@@ -275,7 +275,7 @@ public void messageArrived(String topic, MqttMessage message)
             <footer>
                 <div class="pull-left">
                     <p>
-                        &copy; 2015 ~ MarceStarlet ~ Powered By <a href="http://hugo.spf13.com">Hugo</a> - version: 0.15 ~ <a href="http://marcestarlet.github.io/license">License</a>
+                        &copy; 2015 ~ MarceStarlet ~ Powered By <a href="http://hugo.spf13.com">Hugo</a> - version: 0.42.1 ~ <a href="http://marcestarlet.github.io/license">License</a>
                     </p>
                 </div>
 
@@ -296,7 +296,6 @@ public void messageArrived(String topic, MqttMessage message)
                     
                         <a href="https://github.com/MarceStarlet" target="_blank">
                         <i class="fa fa-github-square fa-2x"></i></a>
-                    
                     
                     
                     

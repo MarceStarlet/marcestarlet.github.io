@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MarceStarlet</title>
+    <title>MarceStarlet on MarceStarlet</title>
     <link>http://marcestarlet.github.io/</link>
-    <description>Recent content on MarceStarlet</description>
+    <description>Recent content in MarceStarlet on MarceStarlet</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
     <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
     <lastBuildDate>Thu, 27 Apr 2017 18:27:11 -0500</lastBuildDate>
-    <atom:link href="http://marcestarlet.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
       
         <item>
@@ -122,7 +122,7 @@ world, and for obvious reasons they won&amp;rsquo;t be afraid to get in touch wi
 
 &lt;p&gt;So, if everybody will know how to program, but no all will become into programmers &amp;hellip;&lt;/p&gt;
 
-&lt;h3 id=&#34;who-the-hell-will-be-a-programmer:02e0afe8cd8fb8df1f5d70311e34d2d9&#34;&gt;Who the hell will be a programmer?&lt;/h3&gt;
+&lt;h3 id=&#34;who-the-hell-will-be-a-programmer&#34;&gt;Who the hell will be a programmer?&lt;/h3&gt;
 
 &lt;p&gt;There are many definitions to describe what a programmer is, and the opinion of
 every programmer will be different so, I&amp;rsquo;m going to mention the things I believe
@@ -180,11 +180,11 @@ the programmers and how I believe this profesion will turn into.&lt;/p&gt;
             <guid>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</guid>
             <description>
 
-&lt;h2 id=&#34;mqtt-concepts-usage:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;MQTT - Concepts &amp;amp; Usage&lt;/h2&gt;
+&lt;h2 id=&#34;mqtt-concepts-usage&#34;&gt;MQTT - Concepts &amp;amp; Usage&lt;/h2&gt;
 
 &lt;p&gt;The last part of this serie of posts about MQTT will cover some concepts about the protocol that essentialy will show us the boundaries of the protocol and how it handles the connections between clients and the broker.&lt;/p&gt;
 
-&lt;h3 id=&#34;connection:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;Connection&lt;/h3&gt;
+&lt;h3 id=&#34;connection&#34;&gt;Connection&lt;/h3&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start by defining the &lt;strong&gt;MQTT Connection&lt;/strong&gt;. The connection initiates when a client sends a &lt;em&gt;CONNECT&lt;/em&gt; message to the broker, then the broker responds with a &lt;em&gt;CONNACK&lt;/em&gt; and a status code.&lt;/p&gt;
 
@@ -218,7 +218,7 @@ This flag indicates to the client wheter the broker has a persistent session or 
 This flags lets the client know if the connection attemp was successfull or not, and if not, it indicates what the issue is.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;publish:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;Publish&lt;/h3&gt;
+&lt;h3 id=&#34;publish&#34;&gt;Publish&lt;/h3&gt;
 
 &lt;p&gt;The publish action allows a client to send messages to a topic destination in different modes, but always with a payload, and due MQTT is a data agnostic, you can set to the payload the &lt;em&gt;data&lt;/em&gt; you want for the case you need. The publish message have some attributes, listed bellow the most important:&lt;/p&gt;
 
@@ -281,7 +281,7 @@ try {
 
 &lt;p&gt;&lt;a href=&#34;https://goo.gl/dJBp8R&#34; title=&#34;MarceStarlet Github - MQTTPahoPublisher&#34;&gt;Complete code&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;subscribe:7f40dd5983eef10f10ba3b4412c0b08b&#34;&gt;Subscribe&lt;/h3&gt;
+&lt;h3 id=&#34;subscribe&#34;&gt;Subscribe&lt;/h3&gt;
 
 &lt;p&gt;A subscription is when a MQTT client susbcribes to a Topic in a Broker with a specific QoS, in order to receive the messages that a puslisher send to the topic where is subscribed. A subscription consists of a &lt;strong&gt;SUBSCRIBE&lt;/strong&gt; message that has a packed identifier and a list of subscriptions as attributes.&lt;/p&gt;
 
@@ -361,7 +361,7 @@ public void messageArrived(String topic, MqttMessage message)
             <guid>http://marcestarlet.github.io/blog/2016/04/17/messaging-systems/</guid>
             <description>
 
-&lt;h1 id=&#34;what-messaging-system-means:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;What &amp;ldquo;Messaging System&amp;rdquo; means?&lt;/h1&gt;
+&lt;h1 id=&#34;what-messaging-system-means&#34;&gt;What &amp;ldquo;Messaging System&amp;rdquo; means?&lt;/h1&gt;
 
 &lt;p&gt;The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.&lt;/p&gt;
 
@@ -395,7 +395,8 @@ public void messageArrived(String topic, MqttMessage message)
 &lt;li&gt;Interact with an external repository to augment a message or store it&lt;/li&gt;
 &lt;li&gt;Invoke Web services to retrieve data&lt;/li&gt;
 &lt;li&gt;Respond to events or errors&lt;/li&gt;
-&lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p align=&#34;center&#34;&gt;
@@ -407,14 +408,15 @@ public void messageArrived(String topic, MqttMessage message)
 
 &lt;p&gt;&lt;a href=&#34;https://goo.gl/hQenrh&#34; title=&#34;MarceStarlet Github - EmbeddedBroker&#34;&gt;ActiveMQ Message Broker example code&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;where-a-messaging-systems-should-be-used:4c1887b8f0e1a768fcf12d83e1d1e072&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
+&lt;h3 id=&#34;where-a-messaging-systems-should-be-used&#34;&gt;Where a Messaging Systems should be used?&lt;/h3&gt;
 
 &lt;p&gt;As many of the systems and software solutions you can&amp;rsquo;t apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;In an enterprise that necessary require a reliable communication between applications.&lt;/li&gt;
 &lt;li&gt;In distributed systems that wants to communicate data from different endpoints.&lt;/li&gt;
-&lt;li&gt;When have different applications that only must to be worried about what data will be transferred and don&amp;rsquo;t care how it is transferred.&lt;/li&gt;
+&lt;li&gt;When have different applications that only must to be worried about what data will be transferred and don&amp;rsquo;t care how it is transferred.
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Some examples where a Messaging System is used: Apache TomEE, Eclipse, Whatsapp, etc.&lt;/p&gt;
@@ -433,7 +435,7 @@ public void messageArrived(String topic, MqttMessage message)
             <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</guid>
             <description>
 
-&lt;h2 id=&#34;mqtt-the-protocol:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;MQTT - The protocol&lt;/h2&gt;
+&lt;h2 id=&#34;mqtt-the-protocol&#34;&gt;MQTT - The protocol&lt;/h2&gt;
 
 &lt;p&gt;Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.&lt;/p&gt;
 
@@ -446,7 +448,7 @@ In telecommunications, a communications protocol is a system of rules that allow
 
 &lt;p&gt;The MQTT protocol is based on top of TCP/IP and both client and &lt;em&gt;broker need&lt;/em&gt; to have a TCP/IP stack.&lt;/p&gt;
 
-&lt;h2 id=&#34;mqtt-elements:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;MQTT Elements&lt;/h2&gt;
+&lt;h2 id=&#34;mqtt-elements&#34;&gt;MQTT Elements&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Publish/Subscriber&lt;/strong&gt;&lt;/li&gt;
@@ -454,7 +456,7 @@ In telecommunications, a communications protocol is a system of rules that allow
 &lt;li&gt;&lt;strong&gt;Broker (Server)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;publish-subscriber:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Publish/Subscriber&lt;/h3&gt;
+&lt;h3 id=&#34;publish-subscriber&#34;&gt;Publish/Subscriber&lt;/h3&gt;
 
 &lt;p&gt;The publish/subscribe pattern (pub/sub) is an alternative to the traditional client-server model, where a client communicates directly with an endpoint. However, &lt;strong&gt;Pub/Sub decouples a client, who is sending a particular message (called publisher) from another client (or more clients), who is receiving the message (called subscriber)&lt;/strong&gt;. This means that the publisher and subscriber don’t know about the existence of one another. There is a third component, called broker, which is known by both the publisher and subscriber, which filters all incoming messages and distributes them accordingly.&lt;/p&gt;
 
@@ -474,7 +476,7 @@ In telecommunications, a communications protocol is a system of rules that allow
 
 &lt;p&gt;&lt;em&gt;This fragment was taken from the HiveMQ MQTT blog documentation&lt;/em&gt; &lt;a href=&#34;http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe&#34; title=&#34;hivemq&#34;&gt;HiveMQ Pub/Sub&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;client:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Client&lt;/h3&gt;
+&lt;h3 id=&#34;client&#34;&gt;Client&lt;/h3&gt;
 
 &lt;p&gt;As we have explained in the previous section we can infer that a client can be both a publisher or a subscriber acting under the different purposes they have, or be both at the same time. A publisher is the client destined to accomplish the task of send messages to the MQTT Broker, so then, the subscriber is charged to subscribe to the broker and receive the messages that is interested in.&lt;/p&gt;
 
@@ -482,7 +484,7 @@ In telecommunications, a communications protocol is a system of rules that allow
 
 &lt;p&gt;The MQTT protocol has many library implementations in most of the programming languages such as Java, Android, Arduino, C, C++, C#, Go, iOS, JavaScript, .NET.&lt;/p&gt;
 
-&lt;h3 id=&#34;broker:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;Broker&lt;/h3&gt;
+&lt;h3 id=&#34;broker&#34;&gt;Broker&lt;/h3&gt;
 
 &lt;p&gt;The Broker is the heart of the protocol, it is the component that makes the protocol real. The Broker is in charge of establish connections with all clients, receive all the messages, filter and deliver them to the corresponding interested subscribers. Besides, it persists the messages needed, keeps sessions with the clients, security by supporting authorization and authentication, etc. As it is responsible of communication between clients it must support failover scenarios to recover itself, should be scalable as well as easy to integrate in backend systems.&lt;/p&gt;
 
@@ -522,21 +524,21 @@ In telecommunications, a communications protocol is a system of rules that allow
             <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</guid>
             <description>
 
-&lt;h2 id=&#34;introduction:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;INTRODUCTION&lt;/h2&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;INTRODUCTION&lt;/h2&gt;
 
-&lt;h3 id=&#34;what-about-mqtt:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;What about MQTT?&lt;/h3&gt;
+&lt;h3 id=&#34;what-about-mqtt&#34;&gt;What about MQTT?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Have you heard about MQTT?&lt;/strong&gt; Hope you have, but if you haven&amp;rsquo;t, don&amp;rsquo;t worry you&amp;rsquo;ll be hearing more about it in the next months since it&amp;rsquo;s becoming popular.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;MQTT&lt;/strong&gt; is the most popular protocol used for IoT (internet of things) but don&amp;rsquo;t get confused, MQTT isn&amp;rsquo;t only for IoT, as it is a protocol it can be used in most of the communication situations, like TCP/IP does, but there are some great things that becomes MQTT special and unique to solve a communication problem.&lt;/p&gt;
 
-&lt;h3 id=&#34;history:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;History&lt;/h3&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
 
 &lt;p&gt;MQTT was born in the IBM labs in 1999, when they faced a situation where they needed to save battery energy and use minimal bandwidth communication for a satellite connection. MQTT has a long story about its supposed acronym meanning, but what you should know about it, is: that the acronym does not exists anymore and you should only call it MQTT. Courious fact: I know about MQTT because of its acronym meanning that comes from an old IBM product called &amp;ldquo;MQ Series&amp;rdquo; that uses this &amp;ldquo;Telemetry Transport&amp;rdquo; protocol.&lt;/p&gt;
 
 &lt;p&gt;Well, after some history we can pass to a more excited section that defines to us the MQTT protocol.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-really-is-mqtt:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;What really is MQTT?&lt;/h3&gt;
+&lt;h3 id=&#34;what-really-is-mqtt&#34;&gt;What really is MQTT?&lt;/h3&gt;
 
 &lt;p&gt;MQTT is a lightweightm, open, simple and easy to implement Client Server publish/subscribe messaging transport protocol.&lt;/p&gt;
 
@@ -564,7 +566,7 @@ In telecommunications, a communications protocol is a system of rules that allow
             <guid>http://marcestarlet.github.io/blog/2016/01/14/welcome-2016/</guid>
             <description>
 
-&lt;h2 id=&#34;el-comienzo-the-begining:a8158e2ae96b1b34e1f733f49d15bcfd&#34;&gt;El comienzo/The begining&lt;/h2&gt;
+&lt;h2 id=&#34;el-comienzo-the-begining&#34;&gt;El comienzo/The begining&lt;/h2&gt;
 
 &lt;p&gt;Hola/Hi&lt;/p&gt;
 
