@@ -224,6 +224,7 @@ menu        = "main"
       <li><strong>2018</strong></li>
 			<ul>
 			  <li>Functional Programming in Scala (Toshiba GCS)</li>
+        <li>Sé tu propio líder (Luxoft)</li>
 				<li>Spark Framework Workshop (Talent Network)</li>
 			</ul>
 			<li><strong>2017</strong></li>
@@ -281,6 +282,7 @@ menu        = "main"
       <li>Microservices</li>
       <li>Functional Programming</li>
       <li>Cloud Computing</li>
+      <li>Docker</li>
     </ul>
     <p>See my github repositories: <a href="https://github.com/MarceStarlet">https://github.com/MarceStarlet</a></p>
   </div>
