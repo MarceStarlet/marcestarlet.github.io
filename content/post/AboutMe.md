@@ -12,14 +12,13 @@ menu        = "main"
 		<img src="/img/marce.jpg" alt="MarceStarlet" class="img-circle" heigh="170" width="170">
 	</div>
 	<div>
-		<p>
-			My name is <strong>Marcela Sena</strong> and I'm from Tepic in Nayarit, Mexico.
+		<p>    
+			My name is <strong>Marcela Sena</strong> and I'm from Tepic Nayarit, México 🇲🇽
 		</p>
 		<p>
-			I currently live and work in Guadalajara, Jalisco. I'm a Software Engineer passionate for programming, learn new stuffs, diversity in IT, movies, music, anime, running, hiking and my dog; her name is Frida like the mexican painter Frida Kahlo.
-	    </p>
-	    <p>
-			I love rainy afternoons and a delicious cup of coffee in the morning with a piece of sweet bread (my favorite is the cappuccino). I really enjoy walk along to a park, mountain or the city as well as I love running while I listen to music. Teaching others and sharing my knowledge is exciting to me because I feel I can change the world.
+			Software Engineer passionate about code, implement web and enterprise applications, share knowledge, learn new technologies, diversity.<br>
+      I'm Co-founder of the <a href="https://www.techwo.org/">TechWo</a> community, speaker and <a href="hhttps://medium.com/@marcestarlet">Blog writer</a> by choice.  
+      I love music, movies, running, read, and my dog 🐾
 		</p>
 	</div>
 </div>
@@ -27,7 +26,7 @@ menu        = "main"
 	<p>&nbsp;</p>
   <h3>My Career</h3>
   <p>
-  I’m graduated from the "Instituto Tecnológico de Tepic" with a specialty in distributed applications. I have more than 8 years of experience in web applications and enterprise applications as a backend developer. I’m a passionate woman about software engineering by generating and sharing content, but also I’m interested about the diversity in the IT world. I'm currently working as a Software Engineer in Toshiba TGCS, I'm a Co-Founder and organizer in the Tech Women Community and an active participant in the Java GDL community.  
+   I've got a bachelors degree in Computer Systems specialized in "Distributed Systems" and I've been working as a Software Engineer since 2009. My experience has been focused in large Java systems as Web and Enterprise applications, and most of my time I've been working as a back-end developer by doing tickets, designing and implementing new features, scaling up, upgrading to new versions, applying security, communicating systems, refactorizing code to improve performance, and improving the collaborative company's culture by sharing knowledge for cross teams.
   </p><br/>
 </div>
 
@@ -43,7 +42,7 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Toshiba GCS </h4>
-                <p><small class="text-muted"><i></i> since March 2013 (5 years, 3 months) Current</small></p>
+                <p><small class="text-muted"><i></i> March 2013 to June 2018 (5 years, 3 months)</small></p>
               </div>
               <div class="timeline-body">
                 Development of enterprise applications<br/><br/>
@@ -54,8 +53,8 @@ menu        = "main"
                   <div class="panel-body">
                     <ul>
                       <li>Development & maintenance of a web POS application</li>
+											<li>Development & maintenance of a “POS Controller” framework for the different events and routes of the Web POS application.</li>
                       <li>Development of the POS UI elements and widgets</li>
-											<li>Development of the POS Controller components, routes, querys</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
                         <li>Javascript, dojo, Java, Spring, Camel, JMS, xml, json</li>
@@ -71,7 +70,7 @@ menu        = "main"
                   <div class="panel-body">
                     <ul>
                       <li>Development & maintenance of a middleware solution to communicate the retail store applications with an external hosts</li>
-                      <li>Development of a Java embedded Messaging broker allowing bidirectional broker-to-broker communication</li>
+                      <li>Development of a Java API to embedded a Messaging broker supporting bidirectional broker-to-broker communication</li>
                       <li><strong>Technologies & Tools: </strong><br/></li>
                       <ul>
                         <li>JMS, MQJMS, MQTT, JSE & JEE, Spring, Camel, slf4j, xml, xslt, xsd</li>
@@ -86,7 +85,7 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Tech Women Community</h4>
-                <p><small class="text-muted"><i></i> March 2014 (4 years, 3 months) Current</small></p>
+                <p><small class="text-muted"><i></i> March 2014 - Current</small></p>
               </div>
               <div class="timeline-body">
                 <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refTWC1">
@@ -229,32 +228,28 @@ menu        = "main"
 			</ul>
 			<li><strong>2017</strong></li>
 			<ul>
-			  <li>MongoDB Workshop (Campus Party 8)</li>
-				<li>Actor Model with Akka (Campus Party 8)</li>
-				<li>Actor Model with Akka (Toshiba GCS)</li>
-				<li>MQTT & IoT (Toshiba GCS)</li>
-				<li>IoT - How to start? (TechWo)</li>
+			  <li>MongoDB Workshop (Campus Party 8, Toshiba GCS)</li>
+				<li>Actor Model with Akka (Campus Party 8, Toshiba GCS)</li>
+				<li>MQTT & IoT in Cloud (Toshiba GCS)</li>
+				<li>IoT - How to start? (TechWo Aniversary)</li>
 			</ul>
       <li><strong>2016</strong></li>
       <ul>
 			  <li>MQTT for IoT & Mobile demo (UNIVA IoT Fest)</li>
-				<li>MQTT for IoT (TechWo)</li>
 				<li>Member of the Judge for the Highschool girls (TechnovationChallengeMx)</li>
-				<li>Java Web Technologies (Campus Party 7)</li>
-				<li>Hugo Framework (Campus Party 7)</li>
-        <li>Java Web Technologies (Toshiba GCS)</li>				
+				<li>Java Web Technologies (Campus Party 7, Toshiba GCS)</li>
+				<li>Hugo Framework (Campus Party 7)</li>				
       </ul>
       <li><strong>2015</strong></li>
       <ul>
-        <li>Las Internetas - Presentation of the CoC (Campus Party)</li>
-        <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party)</li>
+        <li>Las Internetas - Presentation of the CoC (Campus Party 6)</li>
+        <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party 6)</li>
         <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
         <li>Google I/O 2015 Experience (TechWo)</li>
-        <li>Spring- MVC Moduel & Project 101 (TechWo)</li>
       </ul>
       <li><strong>2014</strong></li>
       <ul>
-        <li>Spring 3.0 - MVC Moduel & Project 101 (JavaGDL Community)</li>
+        <li>Spring - MVC Moduel & Project 101 (JavaGDL Community)</li>
         <li>Strings, I/O, Formatting, and Parsing - Chapter for a OCJP course (Toshiba GCS)</li>
       </ul>
       <li><strong>2013</strong></li>
@@ -262,6 +257,22 @@ menu        = "main"
         <li>Java Security Topics (JavaGDL Community)</li>
       </ul>
     </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Motivation</h2>
+  </div>      
+  <div class="panel-body">
+    <h4>Women</h4>
+    <p>
+    I'm a member of the <a href="https://www.techwo.org/">TechWo {❤}</a> community because I'm on my way to improve the women in tech path for future generations. I dreamed this for me and for the rest of the girls that now need to be brave for choosing this path, but that they won't need to be brave in the future due to the efforts we're doing today.
+    </p><br/>
+    <h4>Tech Community</h4>
+    <p>
+    I think that <strong>share knowledge is the clue to improve technology</strong>, and I believe that we can't explain to others the things we don't understand, so I became a speaker to make sure of understanding things and share it with others.
+    </p>
   </div>
 </div>
 
