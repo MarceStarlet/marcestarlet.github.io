@@ -22,17 +22,28 @@ Messaging makes applications loosely coupled and with an asynchronous sending, t
   <img src="/img/Messaging.png" alt="Messaging"/>
 </p>
                                
-In order to transfer the data from different applications an EMS is needed. An **EMS** (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.
+In order to transfer the data from different applications an EMS is needed.
 
-So at the end, a MOM (Message-Oriented Middleware) software solution is required to support sending and receiving messages in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.
+From Wikipedia article a [EMS](https://en.wikipedia.org/wiki/Enterprise_messaging_system) is:
+
+>An **EMS** (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.
+
+So at the end, a MOM (Message-Oriented Middleware) is required to support messaging in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.
                                
 A robust MOM it is not always necessary, so far for many of the current systems that pretend to be simple but powerful, an answer to the new lightweight demands a ***Message Broker*** it is enough to cover the message communication for the enterprise.
 
-A *Message Broker* is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver. A message broker is an architectural pattern for message validation, transformation and routing.[1] It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.
+
+**Message Broker**
+
+From Wikipedia [article](https://en.wikipedia.org/wiki/Message_broker):
+
+>A *Message Broker* is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver. 
+
+>A message broker is an architectural pattern for message validation, transformation and routing. It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.
                                  
-The purpose of a broker is to take incoming messages from applications and perform some action on them. The following are examples of actions that might be taken in by the broker:
+> The purpose of a broker is to take incoming messages from applications and perform some action on them. The following are examples of actions that might be taken in by the broker:
                                  
-* Route messages to one or more of many destinations
+>* Route messages to one or more of many destinations
 * Transform messages to an alternative representation
 * Perform message aggregation, decomposing messages into multiple messages and sending them to their destination, then recomposing the responses into one message to return to the user
 * Interact with an external repository to augment a message or store it

@@ -378,13 +378,26 @@ public void messageArrived(String topic, MqttMessage message)
 &lt;/p&gt;
                                
 
-&lt;p&gt;In order to transfer the data from different applications an EMS is needed. An &lt;strong&gt;EMS&lt;/strong&gt; (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.&lt;/p&gt;
+&lt;p&gt;In order to transfer the data from different applications an EMS is needed.&lt;/p&gt;
 
-&lt;p&gt;So at the end, a MOM (Message-Oriented Middleware) software solution is required to support sending and receiving messages in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.&lt;/p&gt;
+&lt;p&gt;From Wikipedia article a &lt;a href=&#34;https://en.wikipedia.org/wiki/Enterprise_messaging_system&#34;&gt;EMS&lt;/a&gt; is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;An &lt;strong&gt;EMS&lt;/strong&gt; (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So at the end, a MOM (Message-Oriented Middleware) is required to support messaging in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.&lt;/p&gt;
 
 &lt;p&gt;A robust MOM it is not always necessary, so far for many of the current systems that pretend to be simple but powerful, an answer to the new lightweight demands a &lt;strong&gt;&lt;em&gt;Message Broker&lt;/em&gt;&lt;/strong&gt; it is enough to cover the message communication for the enterprise.&lt;/p&gt;
 
-&lt;p&gt;A &lt;em&gt;Message Broker&lt;/em&gt; is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver. A message broker is an architectural pattern for message validation, transformation and routing.[1] It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Message Broker&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;From Wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Message_broker&#34;&gt;article&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;em&gt;Message Broker&lt;/em&gt; is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver.&lt;/p&gt;
+
+&lt;p&gt;A message broker is an architectural pattern for message validation, transformation and routing. It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.&lt;/p&gt;
 
 &lt;p&gt;The purpose of a broker is to take incoming messages from applications and perform some action on them. The following are examples of actions that might be taken in by the broker:&lt;/p&gt;
 
@@ -398,6 +411,7 @@ public void messageArrived(String topic, MqttMessage message)
 &lt;li&gt;Provide content and topic-based message routing using the publish–subscribe pattern&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/blockquote&gt;
 
 &lt;p align=&#34;center&#34;&gt;
   &lt;img src=&#34;http://marcestarlet.github.io/img/MessageBroker.png&#34; alt=&#34;Message Broker&#34;/&gt;
