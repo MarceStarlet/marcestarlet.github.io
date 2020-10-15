@@ -1,7 +1,7 @@
 +++
 author = "TechWo-MarceStarlet"
 date = "2017-04-27T18:27:11-05:00"
-ref = "https://blog.techwomen.org.mx/servidores-threaded-vs-evented-126a3388ae81"
+ref = "https://medium.com/techwomenc/servidores-threaded-vs-evented-126a3388ae81"
 title = "Evented vs Threaded"
 type = "link"
 +++

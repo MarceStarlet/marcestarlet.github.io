@@ -3,9 +3,11 @@ title 		= "About me"
 tags 		= ["about"]
 categories	= ["about","career"]
 date		= "2016-01-10"
-menu        = "main"
+menu    = "main"
+type    =  "page"
 +++
 
+{{< rawhtml >}}
 <h3>This is me</h3>
 <div >
 	<div style="float: left; padding: 7px; 0px;">
@@ -26,7 +28,7 @@ menu        = "main"
 	<p>&nbsp;</p>
   <h3>My Career</h3>
   <p>
-   I've got a bachelors degree in Computer Systems specialized in "Distributed Systems" and I've been working as a Software Engineer since 2009. My experience has been focused in large Java systems as Web and Enterprise applications, and most of my time I've been working as a back-end developer by doing tickets, designing and implementing new features, scaling up, upgrading to new versions, applying security, communicating systems, refactorizing code to improve performance, and improving the collaborative company's culture by sharing knowledge for cross teams.
+   I've got a bachelors degree in Computer Systems specialized in "Distributed Systems" and I've been working as a Software Engineer since 2009. My experience has been focused in large Java systems as Web and Enterprise applications, and most of my time I've been working as a back-end developer by doing tickets, designing and implementing new features, scaling up, upgrading to new versions, applying security, communicating systems, refactorizing code to improve performance, handling concurrency in distributed envs, and improving the collaborative company's culture by sharing knowledge for cross teams.
   </p><br/>
 </div>
 
@@ -37,6 +39,54 @@ menu        = "main"
     </div>      
     <div class="panel-body">
       <ul class="timeline">
+        <li class="timeline-inverted">
+            <div class="timeline-badge default"><i>AC</i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">AvenueCode / Apple</h4>
+                <p><small class="text-muted"><i></i> June 2019 - Present</small></p>
+              </div>
+              <div class="timeline-body">
+                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA1">
+                  Internal tools for assets
+                </button>
+                <div id="refA1" class="collapse">
+                    <ul>
+                      <li>Development of new interactive tool to move assets</li>
+                      <li><strong>back-end Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>Java 11, Spring boot</li>
+                        <li>OS: macOS, linux</li>
+                        <li>Cloud/Containers: Docker, Kubernetes</li>
+                      </ul>
+                      <li><strong>front-end Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>Typescript, React, HTML, CSS </li>
+                      </ul>
+                      <li><strong>DB Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>PostgreSQL</li>
+                      </ul>
+                    </ul>
+                </div><br/><br/>
+                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA2">
+                  DAM (Digital asset management)
+                </button>
+                <div id="refA2" class="collapse">
+                    <ul>
+                      <li>Development & Design for DAM internal tool</li>
+                      <li><strong>back-end Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>Java 11, Spring boot, Python</li>
+                        <li>OS: macOS, linux</li>
+                        <li>Database: PostgreSQL</li>
+                        <li>Cloud/Containers: Docker, Kubernetes, Jenkins jobs</li>
+                      </ul>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </li>
           <li>
             <div class="timeline-badge default"><i>T</i></div>
             <div class="timeline-panel">
@@ -46,6 +96,22 @@ menu        = "main"
               </div>
               <div class="timeline-body">
                 Development of enterprise applications<br/><br/>
+                <button class="btn btn-responsive btn-default btn-sm" data-toggle="collapse" data-target="#refT1">
+                  Remote Management System
+                </button>
+                <div id="refT1" class="panel panel-default collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li>Inventory & Monitoring of POS (Point Of Sale) terminals from different customer stores on their different locations.</li>
+											<li>I was leading a team for the development of a Data Collector component, which gathers data from different devices and publishes them into an Azure IoT Hub.</li>
+                      <li><strong>Technologies & Tools: </strong><br/></li>
+                      <ul>
+                        <li>Java, ActiveMQ, Python, Javascript, Bootstrap</li>
+                        <li>Azure: IoT Hub SDK, IoT Hub, Stream Analytics, Cosmos DB, Power BI</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div><br/><br/>
 								<button class="btn btn-responsive btn-default btn-sm" data-toggle="collapse" data-target="#refT1">
                   Web POS Application
                 </button>
@@ -85,7 +151,7 @@ menu        = "main"
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">Tech Women Community</h4>
-                <p><small class="text-muted"><i></i> March 2014 - Current</small></p>
+                <p><small class="text-muted"><i></i> March 2014 - Present</small></p>
               </div>
               <div class="timeline-body">
                 <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refTWC1">
@@ -299,3 +365,4 @@ menu        = "main"
   </div>
 </div>
 </div>
+{{< rawhtml >}}

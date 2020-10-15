@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on MarceStarlet</title>
+    <title>development on MarceStarlet</title>
     <link>http://marcestarlet.github.io/categories/development/</link>
-    <description>Recent content in Development on MarceStarlet</description>
+    <description>Recent content in development on MarceStarlet</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</managingEditor>
     <webMaster>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</webMaster>
-    <lastBuildDate>Thu, 27 Apr 2017 15:08:10 -0500</lastBuildDate>
-    
-	<atom:link href="http://marcestarlet.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Apr 2017 15:08:10 -0500</lastBuildDate><atom:link href="http://marcestarlet.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TechWo Blog project</title>
       <link>http://marcestarlet.github.io/blog/2017/04/27/techwo-blog-project/</link>
@@ -34,20 +30,20 @@ I think all of these arguments are valid and I really agreed them, but I believe
     
     <item>
       <title>MQTT - Concepts &amp; Usage</title>
-      <link>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</link>
+      <link>http://marcestarlet.github.io/blog/2016/04/20/mqtt-concepts-usage/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
-      <guid>http://marcestarlet.github.io/blog/2016/04/20/mqtt---concepts--usage/</guid>
+      <guid>http://marcestarlet.github.io/blog/2016/04/20/mqtt-concepts-usage/</guid>
       <description>MQTT - Concepts &amp;amp; Usage The last part of this serie of posts about MQTT will cover some concepts about the protocol that essentialy will show us the boundaries of the protocol and how it handles the connections between clients and the broker.
 Connection Let&amp;rsquo;s start by defining the MQTT Connection. The connection initiates when a client sends a CONNECT message to the broker, then the broker responds with a CONNACK and a status code.</description>
     </item>
     
     <item>
       <title>MQTT - The protocol</title>
-      <link>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</link>
+      <link>http://marcestarlet.github.io/blog/2016/01/21/mqtt-the-protocol/</link>
       <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
       <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
-      <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt---the-protocol/</guid>
+      <guid>http://marcestarlet.github.io/blog/2016/01/21/mqtt-the-protocol/</guid>
       <description>MQTT - The protocol Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.
  My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.
  Now some context, take it from Wikipedia the definition of protocol: In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity.</description>
@@ -55,10 +51,10 @@ Connection Let&amp;rsquo;s start by defining the MQTT Connection. The connection
     
     <item>
       <title>MQTT - Introduction</title>
-      <link>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</link>
+      <link>http://marcestarlet.github.io/blog/2016/01/14/mqtt-introduction/</link>
       <pubDate>Thu, 14 Jan 2016 00:00:00 +0000</pubDate>
       <author>cosmo.marce &lt;at&gt; gmail &lt;dot&gt; com (Marcela Sena)</author>
-      <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt---introduction/</guid>
+      <guid>http://marcestarlet.github.io/blog/2016/01/14/mqtt-introduction/</guid>
       <description>INTRODUCTION What about MQTT? Have you heard about MQTT? Hope you have, but if you haven&amp;rsquo;t, don&amp;rsquo;t worry you&amp;rsquo;ll be hearing more about it in the next months since it&amp;rsquo;s becoming popular.
 MQTT is the most popular protocol used for IoT (internet of things) but don&amp;rsquo;t get confused, MQTT isn&amp;rsquo;t only for IoT, as it is a protocol it can be used in most of the communication situations, like TCP/IP does, but there are some great things that becomes MQTT special and unique to solve a communication problem.</description>
     </item>
