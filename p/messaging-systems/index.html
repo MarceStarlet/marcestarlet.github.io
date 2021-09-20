@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='What &amp;ldquo;Messaging System&amp;rdquo; means? The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.
+A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, How the enterprise can do this?'><title>Messaging Systems</title>
+
+<link rel='canonical' href='https://marcestarlet.github.io/p/messaging-systems/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Messaging Systems'>
+<meta property='og:description' content='What &amp;ldquo;Messaging System&amp;rdquo; means? The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.
+A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, How the enterprise can do this?'>
+<meta property='og:url' content='https://marcestarlet.github.io/p/messaging-systems/'>
+<meta property='og:site_name' content='MarceStarlet'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='messaging' /><meta property='article:tag' content='java' /><meta property='article:tag' content='JMS' /><meta property='article:tag' content='JMS Patterns' /><meta property='article:published_time' content='2016-04-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2016-04-17T00:00:00&#43;00:00'/>
+<meta name="twitter:site" content="@MarceStarlet">
+    <meta name="twitter:creator" content="@MarceStarlet"><meta name="twitter:title" content="Messaging Systems">
+<meta name="twitter:description" content="What &amp;ldquo;Messaging System&amp;rdquo; means? The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.
+A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, How the enterprise can do this?">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://marcestarlet.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/messaging/" >
+                messaging
+            </a>
+        
+            <a href="/categories/java/" >
+                java
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/messaging-systems/">Messaging Systems</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 17, 2016</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="what-messaging-system-means">What &ldquo;Messaging System&rdquo; means?</h1>
+<p>The Messaging Systems exist since some years ago but they&rsquo;re not so popular as other kind of systems.</p>
+<p>A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, <strong>How the enterprise can do this?</strong></p>
+<h2 id="using-messaging">Using Messaging</h2>
+<p>Messaging allows the enterprise to share data from applications that have been built in different platforms and uses different kind of data by transforming the data in a common customized or not customized format and transferring the packed data between the applications. In a reliably, asynchronously, frequent and immediate transfer way, a Messaging System improves the enterprise communication.</p>
+<p>Messaging makes applications loosely coupled and with an asynchronous sending, the applications do not need to be running at the same time in ordert to transfer data, so this does the enterprise more reliable. Messaging delegtes &ldquo;<em><strong>messagging systems</strong></em>&rdquo; the responsibility of transfer the data between applications, so the applications do not need to worry about how the data is transfered but they worry about what data shold be transfer.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 232; 
+			flex-basis: 559px"
+	>
+	<a href="/p/messaging-systems/messaging.png" data-size="615x264">
+		<img src="/p/messaging-systems/messaging.png"
+			width="615"
+			height="264"
+			srcset="/p/messaging-systems/messaging_hu356625347f3e2772f507154404175a85_13072_480x0_resize_box_3.png 480w, /p/messaging-systems/messaging_hu356625347f3e2772f507154404175a85_13072_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Messaging">
+	</a>
+	
+	<figcaption>Messaging</figcaption>
+	
+</figure></p>
+<p>In order to transfer the data from different applications an EMS is needed.</p>
+<p>From Wikipedia article a <a class="link" href="https://en.wikipedia.org/wiki/Enterprise_messaging_system"  target="_blank" rel="noopener"
+    >EMS</a> is:</p>
+<blockquote>
+<p>An <strong>EMS</strong> (Enterprise Messaging System) is a set of published enterprise-wide standards that allows organizations to send semantically precise messages between computer systems. EMS systems promote loosely coupled architectures that allow changes in the formats of messages to have minimum impact on message subscribers. EMS systems are facilitated by the use of structured messages (such as using XML or JSON), and appropriate protocols, such as DDS, MSMQ, AMQP or SOAP with web services.</p>
+</blockquote>
+<p>So at the end, a MOM (Message-Oriented Middleware) is required to support messaging in distributed systems. This software is specialized about communication, a MOM provides transforming, standardized protocols, communication routes (channels, pipes, etc.), a Message broker, and the APIs required to connect with.</p>
+<p>A robust MOM it is not always necessary, so far for many of the current systems that pretend to be simple but powerful, an answer to the new lightweight demands a <em><strong>Message Broker</strong></em> it is enough to cover the message communication for the enterprise.</p>
+<h2 id="message-broker">Message Broker</h2>
+<p>From Wikipedia <a class="link" href="https://en.wikipedia.org/wiki/Message_broker"  target="_blank" rel="noopener"
+    >article</a>:</p>
+<blockquote>
+<p>A <em>Message Broker</em> is an intermediary program module that translates a message from the formal messaging protocol of the sender to the formal messaging protocol of the receiver.</p>
+</blockquote>
+<blockquote>
+<p>A message broker is an architectural pattern for message validation, transformation and routing. It mediates communication amongst applications, minimizing the mutual awareness that applications should have of each other in order to be able to exchange messages, effectively implementing decoupling.</p>
+</blockquote>
+<blockquote>
+<p>The purpose of a broker is to take incoming messages from applications and perform some action on them. The following are examples of actions that might be taken in by the broker:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Route messages to one or more of many destinations</li>
+<li>Transform messages to an alternative representation</li>
+<li>Perform message aggregation, decomposing messages into multiple messages and sending them to their destination, then recomposing the responses into one message to return to the user</li>
+<li>Interact with an external repository to augment a message or store it</li>
+<li>Invoke Web services to retrieve data</li>
+<li>Respond to events or errors</li>
+<li>Provide content and topic-based message routing using the publish–subscribe pattern</li>
+</ul>
+</blockquote>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 102; 
+			flex-basis: 246px"
+	>
+	<a href="/p/messaging-systems/message-broker.png" data-size="331x322">
+		<img src="/p/messaging-systems/message-broker.png"
+			width="331"
+			height="322"
+			srcset="/p/messaging-systems/message-broker_hu74ffa6f987d1d5782734d6a19d81982d_10703_480x0_resize_box_3.png 480w, /p/messaging-systems/message-broker_hu74ffa6f987d1d5782734d6a19d81982d_10703_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Message Broker">
+	</a>
+	
+	<figcaption>Message Broker</figcaption>
+	
+</figure></p>
+<p>These are some of the most popular Message Brokers: Apache ActiveMQ, RabbitMQ, HiveMQ, Apache Kafka.</p>
+<p><a class="link" href="https://goo.gl/hQenrh"  title="MarceStarlet Github - EmbeddedBroker"
+     target="_blank" rel="noopener"
+    >ActiveMQ Message Broker example code</a></p>
+<h2 id="where-a-messaging-systems-should-be-used">Where a Messaging Systems should be used?</h2>
+<p>As many of the systems and software solutions you can&rsquo;t apply the Messaging System anywhere, but there are some specific scenarios where it should be use in order to improve the communication. The Messaging Systems should be used:</p>
+<ul>
+<li>In an enterprise that necessary require a reliable communication between applications.</li>
+<li>In distributed systems that wants to communicate data from different endpoints.</li>
+<li>When have different applications that only must to be worried about what data will be transferred and don&rsquo;t care how it is transferred.</li>
+</ul>
+<p>Some examples where a Messaging System is used: Apache TomEE, Eclipse, Whatsapp, etc.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/messaging/">messaging</a>
+        
+            <a href="/tags/java/">java</a>
+        
+            <a href="/tags/jms/">JMS</a>
+        
+            <a href="/tags/jms-patterns/">JMS Patterns</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/mqtt-concepts-usage/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MQTT - Concepts &amp; Usage</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/mqtt-the-protocol/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MQTT - The Protocol</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/mqtt-introduction/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MQTT - Introduction</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2015 - 
+        
+        2021 MarceStarlet
+    </section>
+    
+    <section class="powerby">
+        
+            basura <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#using-messaging">Using Messaging</a></li>
+    <li><a href="#message-broker">Message Broker</a></li>
+    <li><a href="#where-a-messaging-systems-should-be-used">Where a Messaging Systems should be used?</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

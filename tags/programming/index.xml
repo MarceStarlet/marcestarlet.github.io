@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on MarceStarlet</title>
+    <link>https://marcestarlet.github.io/tags/programming/</link>
+    <description>Recent content in programming on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://marcestarlet.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Techwo Blog Project</title>
+      <link>https://marcestarlet.github.io/p/techwo-blog-project/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcestarlet.github.io/p/techwo-blog-project/</guid>
+      <description>For about 3 years I&amp;rsquo;ve been involved in a women in tech community that has the objective to increase the number of women participating in technology, and trying to achive this main objective I got the idea to start a blog project that gathers some of the brightest women I know as writers of this blog and that for a year will write a post about technology every week.
+I know most of those selected women for this project and the others that I didn&amp;rsquo;t know, I&amp;rsquo;ve been starting to see their talent.</description>
+    </item>
+    
+  </channel>
+</rss>

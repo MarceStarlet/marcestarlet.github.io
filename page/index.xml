@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on MarceStarlet</title>
+    <link>https://marcestarlet.github.io/page/</link>
+    <description>Recent content in Pages on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://marcestarlet.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archives</title>
+      <link>https://marcestarlet.github.io/archives/</link>
+      <pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcestarlet.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://marcestarlet.github.io/about-me/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcestarlet.github.io/about-me/</guid>
+      <description>This is me    My name is Marcela Sena and I&#39;m from Tepic Nayarit, México 🇲🇽  Software Engineer passionate about code, implement web and enterprise applications, share knowledge, learn new technologies, diversity.
+I&#39;m Co-founder of the TechWo community, speaker and Blog writer by choice. I love music, movies, running, read, and my dog 🐾    &amp;nbsp;
+My Career  I&#39;ve got a bachelors degree in Computer Systems specialized in &#34;</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://marcestarlet.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcestarlet.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

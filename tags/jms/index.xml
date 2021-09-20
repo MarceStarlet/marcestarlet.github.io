@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JMS on MarceStarlet</title>
+    <link>https://marcestarlet.github.io/tags/jms/</link>
+    <description>Recent content in JMS on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://marcestarlet.github.io/tags/jms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Messaging Systems</title>
+      <link>https://marcestarlet.github.io/p/messaging-systems/</link>
+      <pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcestarlet.github.io/p/messaging-systems/</guid>
+      <description>What &amp;ldquo;Messaging System&amp;rdquo; means? The Messaging Systems exist since some years ago but they&amp;rsquo;re not so popular as other kind of systems.
+A Messaging is usually use in an enterprise environment. An enterprise has many different applications working independently that have been built using different languages and platforms, if the enterprise needs to communicate them by sharing data and process in a diligent way, How the enterprise can do this?</description>
+    </item>
+    
+  </channel>
+</rss>

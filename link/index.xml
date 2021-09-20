@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links on MarceStarlet</title>
+    <link>https://marcestarlet.github.io/link/</link>
+    <description>Recent content in Links on MarceStarlet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Apr 2017 18:27:11 -0500</lastBuildDate><atom:link href="https://marcestarlet.github.io/link/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evented vs Threaded</title>
+      <link>https://marcestarlet.github.io/link/eventedvsthreaded/</link>
+      <pubDate>Thu, 27 Apr 2017 18:27:11 -0500</pubDate>
+      
+      <guid>https://marcestarlet.github.io/link/eventedvsthreaded/</guid>
+      <description>Evented vs Threaded
+On this post I talk about the main differences between the Threaded and the Evented models and how they work by doing an analogy of a real situation that easy explains both models.
+The Threaded model&amp;rsquo;s analogy is about a bank and how the people is assigned to a cashier, if the cashiers are busy then the people will start to queue, so this is how the resources are blocked, until a cashier is free to atend a person, that resource or thread is blocked.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='MQTT - The protocol Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.
+ My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.
+ Now some context, take it from Wikipedia the definition of protocol: In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity.'><title>MQTT - The Protocol</title>
+
+<link rel='canonical' href='https://marcestarlet.github.io/p/mqtt-the-protocol/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='MQTT - The Protocol'>
+<meta property='og:description' content='MQTT - The protocol Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.
+ My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.
+ Now some context, take it from Wikipedia the definition of protocol: In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity.'>
+<meta property='og:url' content='https://marcestarlet.github.io/p/mqtt-the-protocol/'>
+<meta property='og:site_name' content='MarceStarlet'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mqtt' /><meta property='article:tag' content='IoT' /><meta property='article:tag' content='protocols' /><meta property='article:tag' content='communication' /><meta property='article:published_time' content='2016-01-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2016-01-21T00:00:00&#43;00:00'/>
+<meta name="twitter:site" content="@MarceStarlet">
+    <meta name="twitter:creator" content="@MarceStarlet"><meta name="twitter:title" content="MQTT - The Protocol">
+<meta name="twitter:description" content="MQTT - The protocol Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.
+ My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.
+ Now some context, take it from Wikipedia the definition of protocol: In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://marcestarlet.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/development/" >
+                development
+            </a>
+        
+            <a href="/categories/iot/" >
+                IoT
+            </a>
+        
+            <a href="/categories/messaging/" >
+                messaging
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/mqtt-the-protocol/">MQTT - The Protocol</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jan 21, 2016</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="mqtt---the-protocol">MQTT - The protocol</h2>
+<p>Now that you know the reason of the existence of MQTT and where to use it, you can learn how it works and then how to use it.</p>
+<blockquote>
+<p>My philosophy: Only when we know the reason of why a technology exists and where we can apply it, the technology becomes real, otherwise does not exists.</p>
+</blockquote>
+<p>Now some context, take it from Wikipedia the definition of protocol:
+In telecommunications, a communications protocol is a system of rules that allow two or more entities of a communications system to transmit information via any kind of variation of a physical quantity. These are the rules or standard that defines the syntax, semantics and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both.</p>
+<p>The MQTT protocol is based on top of TCP/IP and both client and <em>broker need</em> to have a TCP/IP stack.</p>
+<h2 id="mqtt-elements">MQTT Elements</h2>
+<ul>
+<li><strong>Publish/Subscriber</strong></li>
+<li><strong>Client</strong></li>
+<li><strong>Broker (Server)</strong></li>
+</ul>
+<h3 id="publishsubscriber">Publish/Subscriber</h3>
+<p>The publish/subscribe pattern (pub/sub) is an alternative to the traditional client-server model, where a client communicates directly with an endpoint. However, <strong>Pub/Sub decouples a client, who is sending a particular message (called publisher) from another client (or more clients), who is receiving the message (called subscriber)</strong>. This means that the publisher and subscriber don’t know about the existence of one another. There is a third component, called broker, which is known by both the publisher and subscriber, which filters all incoming messages and distributes them accordingly.</p>
+<p>Advantages of this pattern:</p>
+<ul>
+<li><strong>Decoupling of the clients</strong>, publishers and receivers, do not need to know about each others, do not need to be running at the same time, and the operations on both components do not affect the other.</li>
+<li><strong>Message filtering</strong> is the ability that pub/sub defines so the receivers do only receive the messages they are interested in.</li>
+<li><strong>Scalability</strong>. Can be highly parallelized and processed event-driven.</li>
+</ul>
+<p><strong>MQTT takes advantages of all of these characterístics of the pub/sub pattern.</strong></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 155; 
+			flex-basis: 372px"
+	>
+	<a href="/p/mqtt-the-protocol/mqtt-example.png" data-size="727x469">
+		<img src="/p/mqtt-the-protocol/mqtt-example.png"
+			width="727"
+			height="469"
+			srcset="/p/mqtt-the-protocol/mqtt-example_huff3f187f601792dccb1356fd24a399a8_28722_480x0_resize_box_3.png 480w, /p/mqtt-the-protocol/mqtt-example_huff3f187f601792dccb1356fd24a399a8_28722_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Pub/Sub example">
+	</a>
+	
+	<figcaption>Pub/Sub example</figcaption>
+	
+</figure></p>
+<p><em>This fragment was taken from the HiveMQ MQTT blog documentation</em> <a class="link" href="http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe"  title="hivemq"
+     target="_blank" rel="noopener"
+    >HiveMQ Pub/Sub</a>.</p>
+<h3 id="client">Client</h3>
+<p>As we have explained in the previous section we can infer that a client can be both a publisher or a subscriber acting under the different purposes they have, or be both at the same time. A publisher is the client destined to accomplish the task of send messages to the MQTT Broker, so then, the subscriber is charged to subscribe to the broker and receive the messages that is interested in.</p>
+<p>Therefore, a client is any device using the MQTT library and executes the corresponding to connect to a MQTT broker, through a network.</p>
+<p>The MQTT protocol has many library implementations in most of the programming languages such as Java, Android, Arduino, C, C++, C#, Go, iOS, JavaScript, .NET.</p>
+<h3 id="broker">Broker</h3>
+<p>The Broker is the heart of the protocol, it is the component that makes the protocol real. The Broker is in charge of establish connections with all clients, receive all the messages, filter and deliver them to the corresponding interested subscribers. Besides, it persists the messages needed, keeps sessions with the clients, security by supporting authorization and authentication, etc. As it is responsible of communication between clients it must support failover scenarios to recover itself, should be scalable as well as easy to integrate in backend systems.</p>
+<p>The Clients connect to the Broker and the broker connects the clients each other.</p>
+<p>Some Brokers that implements MQTT are:</p>
+<ul>
+<li>
+<p>ActiveMQ</p>
+</li>
+<li>
+<p>Apache Apollo</p>
+</li>
+<li>
+<p>HiveMQ</p>
+</li>
+<li>
+<p>Mosquitto</p>
+</li>
+<li>
+<p>Moquette</p>
+</li>
+<li>
+<p>RabbitMQ</p>
+</li>
+<li>
+<p>WebSpehreMQ</p>
+</li>
+<li>
+<p>JBoss A-MQ</p>
+</li>
+<li>
+<p>IBM Integration Bus</p>
+</li>
+</ul>
+<p>In the Next post of the MQTT protocol I&rsquo;ll explain you the concepts of the protocol like: QoS, Session, Topics, Connections, MQTT Messages, etc. Also, we&rsquo;ll see how to use the protocol by implementing some clients that will connect to a MQTT Broker.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/mqtt/">mqtt</a>
+        
+            <a href="/tags/iot/">IoT</a>
+        
+            <a href="/tags/protocols/">protocols</a>
+        
+            <a href="/tags/communication/">communication</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/mqtt-concepts-usage/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MQTT - Concepts &amp; Usage</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/mqtt-introduction/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MQTT - Introduction</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/techwo-blog-project/">
+        
+        
+            <div class="article-image">
+                <img src="/p/techwo-blog-project/techwo-blog.aa32e1fc636ae2de48ed25a5a9d98cea_hu4ebb17a02e472e11d6d8fcdb6076c7d1_490540_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-qjLh/GNq4t5I7SWlqdmM6g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Techwo Blog Project</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/be-a-programmer-in-the-near-future/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Be A Programmer In The Near Future</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/messaging-systems/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Messaging Systems</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2015 - 
+        
+        2021 MarceStarlet
+    </section>
+    
+    <section class="powerby">
+        
+            basura <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#mqtt---the-protocol">MQTT - The protocol</a></li>
+    <li><a href="#mqtt-elements">MQTT Elements</a>
+      <ol>
+        <li><a href="#publishsubscriber">Publish/Subscriber</a></li>
+        <li><a href="#client">Client</a></li>
+        <li><a href="#broker">Broker</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
