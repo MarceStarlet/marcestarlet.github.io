@@ -15,357 +15,160 @@ menu:
         pre: user
 ---
 
-<h3>This is me</h3>
-<div>
-	<div>
-		<p>    
-			My name is <strong>Marcela Sena</strong> and I'm from Tepic Nayarit, México 🇲🇽
-		</p>
-		<p>
-			Software Engineer passionate about code, implement web and enterprise applications, share knowledge, learn new technologies, diversity.<br>
-      I'm Co-founder of the <a href="https://www.techwo.org/">TechWo</a> community, speaker and <a href="hhttps://medium.com/@marcestarlet">Blog writer</a> by choice.  
-      I love music, movies, running, read, and my dog 🐾
-		</p>
-	</div>
-</div>
-<div>
-	<p>&nbsp;</p>
-  <h3>My Career</h3>
-  <p>
-   I've got a bachelors degree in Computer Systems specialized in "Distributed Systems" and I've been working as a Software Engineer since 2009. My experience has been focused in large Java systems as Web and Enterprise applications, and most of my time I've been working as a back-end developer by doing tickets, designing and implementing new features, scaling up, upgrading to new versions, applying security, communicating systems, refactorizing code to improve performance, handling concurrency in distributed envs, and improving the collaborative company's culture by sharing knowledge for cross teams.
-  </p><br/>
-</div>
+# This is me
 
-<div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2>Career</h2>
-    </div>      
-    <div class="panel-body">
-      <ul class="timeline">
-        <li class="timeline-inverted">
-            <div class="timeline-badge default"><i>AC</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">AvenueCode / Apple</h4>
-                <p><small class="text-muted"><i></i> June 2019 - Present</small></p>
-              </div>
-              <div class="timeline-body">
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA1">
-                  Internal tools for assets
-                </button>
-                <div id="refA1" class="collapse">
-                    <ul>
-                      <li>Development of new interactive tool to move assets</li>
-                      <li><strong>back-end Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>Java 11, Spring boot</li>
-                        <li>OS: macOS, linux</li>
-                        <li>Cloud/Containers: Docker, Kubernetes</li>
-                      </ul>
-                      <li><strong>front-end Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>Typescript, React, HTML, CSS </li>
-                      </ul>
-                      <li><strong>DB Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>PostgreSQL</li>
-                      </ul>
-                    </ul>
-                </div><br/><br/>
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA2">
-                  DAM (Digital asset management)
-                </button>
-                <div id="refA2" class="collapse">
-                    <ul>
-                      <li>Development & Design for DAM internal tool</li>
-                      <li><strong>back-end Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>Java 11, Spring boot, Python</li>
-                        <li>OS: macOS, linux</li>
-                        <li>Database: PostgreSQL</li>
-                        <li>Cloud/Containers: Docker, Kubernetes, Jenkins jobs</li>
-                      </ul>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge default"><i>T</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Toshiba GCS </h4>
-                <p><small class="text-muted"><i></i> March 2013 to June 2018 (5 years, 3 months)</small></p>
-              </div>
-              <div class="timeline-body">
-                Development of enterprise applications<br/><br/>
-                <button class="btn btn-responsive btn-default btn-sm" data-toggle="collapse" data-target="#refT1">
-                  Remote Management System
-                </button>
-                <div id="refT1" class="panel panel-default collapse">
-                  <div class="panel-body">
-                    <ul>
-                      <li>Inventory & Monitoring of POS (Point Of Sale) terminals from different customer stores on their different locations.</li>
-											<li>I was leading a team for the development of a Data Collector component, which gathers data from different devices and publishes them into an Azure IoT Hub.</li>
-                      <li><strong>Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>Java, ActiveMQ, Python, Javascript, Bootstrap</li>
-                        <li>Azure: IoT Hub SDK, IoT Hub, Stream Analytics, Cosmos DB, Power BI</li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div><br/><br/>
-								<button class="btn btn-responsive btn-default btn-sm" data-toggle="collapse" data-target="#refT1">
-                  Web POS Application
-                </button>
-                <div id="refT1" class="panel panel-default collapse">
-                  <div class="panel-body">
-                    <ul>
-                      <li>Development & maintenance of a web POS application</li>
-											<li>Development & maintenance of a “POS Controller” framework for the different events and routes of the Web POS application.</li>
-                      <li>Development of the POS UI elements and widgets</li>
-                      <li><strong>Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>Javascript, dojo, Java, Spring, Camel, JMS, xml, json</li>
-                        <li>ActiveMQ</li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div><br/><br/>
-                <button class="btn btn-responsive btn-default btn-sm" data-toggle="collapse" data-target="#refT2">
-                  Middleware Solutions, Messaging Brokers
-                </button>
-                <div id="refT2" class="panel panel-default collapse">
-                  <div class="panel-body">
-                    <ul>
-                      <li>Development & maintenance of a middleware solution to communicate the retail store applications with an external hosts</li>
-                      <li>Development of a Java API to embedded a Messaging broker supporting bidirectional broker-to-broker communication</li>
-                      <li><strong>Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>JMS, MQJMS, MQTT, JSE & JEE, Spring, Camel, slf4j, xml, xslt, xsd</li>
-                        <li>ActiveMQ, Moquette, Mosquito, WebSphereMQ, Micro Broker, KahaDB </li>
-                      </ul>
-                    </ul>
-                  </div>
-                </div><br/><br/>
-          </li>
-          <li>
-            <div class="timeline-badge default"><i>TWC</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Tech Women Community</h4>
-                <p><small class="text-muted"><i></i> March 2014 - Present</small></p>
-              </div>
-              <div class="timeline-body">
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refTWC1">
-                  Co-Founder, Organizer
-                </button>
-                <div id="refTWC1" class="collapse">
-                    <ul>
-                      <li>Organizer</li>
-											<li><strong>Activities</strong><br/></li>
-                      <ul>
-                        <li>Events and Meetups Logistics</li>
-                        <li>Speaker</li>
-                        <li>Focal point for Speakers</li>
-                      </ul>
-											<li>Ex-leader</li>
-                      <li><strong>Activities</strong><br/></li>
-                      <ul>
-                        <li>Leadership</li>
-                        <li>Events and Meetups Logistics</li>
-                        <li>Sponsorship manage</li>
-                        <li>Treasurer</li>
-                        <li>Speaker</li>
-                        <li>Focal point for other communities</li>
-                        <li>Focal point for Speakers</li>
-                      </ul>
-                      <li>Co-Founder of the community</li>
-                      <li><strong>Initial Activities</strong><br/></li>
-                      <ul>
-                        <li>Meetups Logistics</li>
-                        <li>Polls</li>
-                        <li>General Organizer</li>
-                      </ul>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-badge default"><i>A</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">A4Sys</h4>
-                <p><small class="text-muted"><i></i> July 2010 to March 2013 (2 years, 9 months)</small></p>
-              </div>
-              <div class="timeline-body">
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA1">
-                  Web Applications
-                </button>
-                <div id="refA1" class="collapse">
-                    <ul>
-                      <li>Development of new configuration and execution components for a web application used and administered by a bank to authorize credits.</li>
-                      <li><strong>back-end Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernate</li>
-                        <li>OS: Fedora, Suse Enterprise, Ubuntu</li>
-                        <li>Application Servers: Tomcat, WebSphere, Glassfish </li>
-                      </ul>
-                      <li><strong>front-end Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>jQuery, SiteMesh, HTML, CSS </li>
-                      </ul>
-                      <li><strong>DB Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>PL/SQL, SQL: Store Procedures, Jobs</li>
-                        <li>SQLDeveloper, SQLServer, pgAdmin</li>
-                      </ul>
-                    </ul>
-                </div><br/><br/>
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refA2">
-                  Web Services
-                </button>
-                <div id="refA2" class="collapse">
-                    <ul>
-                      <li>Development & Design of the Web Services for a "Credit Card Application"</li>
-                      <li><strong>Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>SOAP, SoapUI</li>
-                      </ul>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-badge default"><i>M</i></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4 class="timeline-title">Medisist</h4>
-                <p><small class="text-muted"><i></i> July 2009 to July 2010 (1 year)</small></p>
-              </div>
-              <div class="timeline-body">
-                <button class="btn btn-default btn-sm" data-toggle="collapse" data-target="#refM1">
-                  Desktop Application
-                </button>
-                <div id="refM1" class="collapse">
-                    <ul>
-                      <li>Analysis, design and development of an accounting application under the Java platform (JSE), using design patterns, OO programming</li>
-                      <li><strong>Technologies & Tools: </strong><br/></li>
-                      <ul>
-                        <li>UML Modeling: Visual Paradigm, Visio</li>
-                        <li>Reports in CrystalReports</li>
-                        <li>DDL and DML in SQLServer using stored procedures, functions, views, triggers</li>
-                      </ul>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-      </ul>
-    </div>
-  </div>
-</div>
+My name is **Marcela Sena** and I'm from Tepic Nayarit, México 🇲🇽
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2>Courses & Certifications</h2>
-  </div>      
-  <div class="panel-body">
-    <ul>
-      <li>M101J: MongoDB for Java Developers</li>
-      <li>Java SE 8 Lambdas and Streams</li>
-      <li>Oracle Certified Expert, Java EE 6 Web Services Developer</li>
-      <li>Oracle Certified Expert, Java EE 6 Web Component Developer</li>
-      <li>Oracle Certified Professional, Java SE 6 Programmer</li>
-    </ul>
-  </div>
-</div>
+Software Engineer passionate about code, implement web and enterprise applications, share knowledge, learn new technologies, diversity.
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2>As Speaker</h2>
-  </div>      
-  <div class="panel-body">
-    <ul>
-      <li><strong>2018</strong></li>
-			<ul>
-			  <li>Functional Programming in Scala (Toshiba GCS)</li>
-        <li>Sé tu propio líder (Luxoft)</li>
-				<li>Spark Framework Workshop (Talent Network)</li>
-			</ul>
-			<li><strong>2017</strong></li>
-			<ul>
-			  <li>MongoDB Workshop (Campus Party 8, Toshiba GCS)</li>
-				<li>Actor Model with Akka (Campus Party 8, Toshiba GCS)</li>
-				<li>MQTT & IoT in Cloud (Toshiba GCS)</li>
-				<li>IoT - How to start? (TechWo Aniversary)</li>
-			</ul>
-      <li><strong>2016</strong></li>
-      <ul>
-			  <li>MQTT for IoT & Mobile demo (UNIVA IoT Fest)</li>
-				<li>Member of the Judge for the Highschool girls (TechnovationChallengeMx)</li>
-				<li>Java Web Technologies (Campus Party 7, Toshiba GCS)</li>
-				<li>Hugo Framework (Campus Party 7)</li>				
-      </ul>
-      <li><strong>2015</strong></li>
-      <ul>
-        <li>Las Internetas - Presentation of the CoC (Campus Party 6)</li>
-        <li>The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party 6)</li>
-        <li>Spring MVC Workshop (Toshiba GCS - Tech Submit)</li>
-        <li>Google I/O 2015 Experience (TechWo)</li>
-      </ul>
-      <li><strong>2014</strong></li>
-      <ul>
-        <li>Spring - MVC Moduel & Project 101 (JavaGDL Community)</li>
-        <li>Strings, I/O, Formatting, and Parsing - Chapter for a OCJP course (Toshiba GCS)</li>
-      </ul>
-      <li><strong>2013</strong></li>
-      <ul>
-        <li>Java Security Topics (JavaGDL Community)</li>
-      </ul>
-    </ul>
-  </div>
-</div>
+I'm Co-founder of the [TechWo](https://www.techwo.org/) community, speaker and [Blog writer](https://medium.com/@marcestarlet) by choice.  
+I love music, movies, running/hike, read, and my dog 🐾
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2>Motivation</h2>
-  </div>      
-  <div class="panel-body">
-    <h4>Women</h4>
-    <p>
-    I'm a member of the <a href="https://www.techwo.org/">TechWo {❤}</a> community because I'm on my way to improve the women in tech path for future generations. I dreamed this for me and for the rest of the girls that now need to be brave for choosing this path, but that they won't need to be brave in the future due to the efforts we're doing today.
-    </p><br/>
-    <h4>Tech Community</h4>
-    <p>
-    I think that <strong>share knowledge is the clue to improve technology</strong>, and I believe that we can't explain to others the things we don't understand, so I became a speaker to make sure of understanding things and share it with others.
-    </p>
-  </div>
-</div>
+# My Career
+I've got a bachelors degree in Computer Systems Engineering specialized in "Distributed Systems" and I've been working as a Software Engineer since 2009. My experience has been focused in large Java systems as Web and Enterprise applications, and most of my time I've been working as a back-end developer by doing tickets, designing and implementing new features, scaling up, upgrading to new versions, applying security, communicating systems, refactorizing code to improve performance, handling concurrency in distributed envs, and improving the collaborative company's culture by sharing knowledge for cross teams.
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h2>Interests</h2>
-  </div>      
-  <div class="panel-body">
-    <p>I'm interested in ... (learning some of them)</p>
-    <ul>
-      <li>JS frameworks: React.js, AngualarJS</li>
-      <li>Programming languages: Scala, go, python, JS using Node.js</li>
-      <li>NoSQL-DB: MongoDB, DynamoDB</li>
-      <li>Analitics: Kafka, Spark, Hadoop</li>      
-      <li>IoT</li>
-      <li>Reactive Systems</li>
-      <li>Test Driven Development</li>
-      <li>Microservices</li>
-      <li>Functional Programming</li>
-      <li>Cloud Computing</li>
-      <li>Docker</li>
-    </ul>
-    <p>See my github repositories: <a href="https://github.com/MarceStarlet">https://github.com/MarceStarlet</a></p>
-  </div>
-</div>
-</div>
+## eBay
+### Staff Software Engineer / _Sep 2021 - present_
+- SEO Tools
+- Batch jobs
+- Indexing APIs
+- Web, REST APIs
+  - Java, Spring, Hadoop, Spark SQL
+
+### Senior Software Engineering - Contract / _Dec 2020 – Sep 2021_
+- SEO Tools
+- Batch jobs
+- Indexing APIs
+  - Java, Spring, Hadoop, Spark SQL
+
+## Avenue Code 
+### Consultant at Apple / _Jun 2019 – Sep 2021_
+- Internal tools for asset management
+- DMA (Digital asset management)
+  - Java 11, Spring boot, PostgreSQL, Python scripting
+  - Typescript, React
+
+## TOSHIBA Global Commerce Solutions, Inc
+### Software Engineer  / _Mar 2013 – Jun 2018_
+- **Remote Management System**
+  - Inventory & Monitoring of POS (Point Of Sale) terminals from different customer stores on their different locations.
+  - I was leading a team for the development of a Data Collector component, which gathers data from different devices and publishes them into an Azure IoT Hub.
+    - Java, ActiveMQ, Python, Javascript, Bootstrap
+    - Azure: IoT Hub SDK, IoT Hub, Stream Analytics, Cosmos DB, Power BI
+
+- **Web POS Application**
+  - Development & maintenance of a web POS application
+  - Development & maintenance of a “POS Controller” framework for the different events and routes of the Web POS application.
+  - Development of the POS UI elements and widgets
+    - Javascript, dojo, Java, Spring, Camel, JMS, xml, json
+    - ActiveMQ
+
+- **Middleware Solutions, Messaging Brokers**
+  - Development & maintenance of a middleware solution to communicate the retail store applications with an external hosts
+  - Development of a Java API to embedded a Messaging broker supporting bidirectional broker-to-broker communication
+    - JMS, MQJMS, MQTT, JSE & JEE, Spring, Camel, slf4j, xml, xslt, xsd
+    - ActiveMQ, Moquette, Mosquito, WebSphereMQ, Micro Broker, KahaDB
+
+
+## A4Sys
+### Software Engineer / _Jul 2010 - March 2013_
+
+- **Web Applications**
+  - Development of new configuration and execution components for a web application used and administered by a bank to authorize credits.
+    - JSE & JEE, Spring MVC, JSTL, Apache Commons API, iText, Hibernate
+    - Fedora, Suse Enterprise, Ubuntu
+    - Tomcat, WebSphere, Glassfish
+    - jQuery, SiteMesh, HTML, CSS
+    - PL/SQL, SQL: Store Procedures, Jobs
+    - SQLDeveloper, SQLServer, pgAdmin
+
+- **Web Services**
+  - Development & Design of the Web Services for a "Credit Card Application"
+    - SOAP, SoapUI
+
+## Medisist
+### Java Engineer / _Jul 2009 - Jul 2010_
+
+- **Desktop Application**
+  - Analysis, design and development of an accounting application under the Java platform (JSE), using design patterns, OO programming
+    - UML Modeling: Visual Paradigm, Visio
+    - Reports in CrystalReports
+    - DDL and DML in SQLServer using stored procedures, functions, views, triggers
+
+# Communities
+I'm a member of the TechWo {❤} & Technolatinas communities because I'm on my way to improve the women in tech path for future generations. I dreamed this for me and for the rest of the girls that now need to be brave for choosing this path, but that they won't need to be brave in the future due to the efforts we're doing today.
+## Tech Women Community
+### Organizer / _Mar 2014 - present_
+- I am a Co-Founder of TechWo {❤} community to encourage women to choose STEM careers and keep them interested in programming
+- I was the leader of the [TechWo](https://www.techwo.org/) community during 2015-2016 where I was the focal point for other communities, partners and companies. 
+- I did organize different Tech Events: Meetups, Workshops, Anniversary. 
+- I was the co-creator and leader of a programming summer course for girls called "Pequeñas Programadoras" (Little programmers) (2016 and 2017) which taught girls how to program in Javascript for free. 
+- I was the co-creator and leader of a blog in Medium ([TechWo Blog](https://medium.com/techwomenc)) that looks to group women with different skill set levels to write about programming in Spanish. So that we encourage Mexican Women to keep learning and become role models for other women. You can see my contributions [here](https://medium.com/@marcestarlet).
+- I have been a speaker on different technology events talking about programming and diversity. You can see more about my talks in the following section "As Speaker".
+
+## Technolatinas
+### Organizer / _Sep 2020 - present_
+
+I've been part of this community for a while but I recently have a chance to actively partipate with the organization in some events:
+- Día de la programadora
+  - I've helped to organize a Tech Panel about Prgramming Languages and their impact in the tech industry as I also participated as a Speaker in the panel representing the Java language.
+  - I did organize a Coding Dojo event by creating a Presentation to explain what a Coding Dojo is and a repo to contribute by adding the Solutions to the Katas.
+
+
+# Courses & Certifications
+- M101J: MongoDB for Java Developers
+- Java SE 8 Lambdas and Streams
+- Oracle Certified Expert, Java EE 6 Web Services Developer
+- Oracle Certified Expert, Java EE 6 Web Component Developer
+- Oracle Certified Professional, Java SE 6 Programmer
+
+# As Speaker
+- **2021**
+  - Panel: Lenguajes y Frameworks de Programación en el mercado laboral (Technolatinas)
+  - Coding Dojo - Día de la programadora (Technolatinas)
+- **2020**
+  - Un plan de carrera con diversidad e inclusión (Tecnológico de Tepic)
+  - Hackaton Judge (Tecnológico de Tepic)
+- **2019**
+  - Desmitificando las entrevistas técnicas (TechWo)
+- **2018**
+  - Functional Programming in Scala (Toshiba GCS)
+  - Sé tu propio líder (Luxoft)
+  - Spark Framework Workshop (Talent Network)
+- **2017**
+  - MongoDB Workshop (Campus Party 8, Toshiba GCS)
+  - Actor Model with Akka (Campus Party 8, Toshiba GCS)
+  - MQTT & IoT in Cloud (Toshiba GCS)
+  - IoT - How to start? (TechWo Aniversary)
+- **2016**
+  - MQTT for IoT & Mobile demo (UNIVA IoT Fest)
+  - Member of the Judge for the Highschool girls (TechnovationChallengeMx)
+  - Java Web Technologies (Campus Party 7, Toshiba GCS)
+  - Hugo Framework (Campus Party 7)
+- **2015**
+  - Las Internetas - Presentation of the CoC (Campus Party 6)
+  - The role of women in IT through TWC (DIVEC Fest - CUCEI, Campus Party 6)
+  - Spring MVC Workshop (Toshiba GCS - Tech Submit)
+  - Google I/O 2015 Experience (TechWo)
+- **2014**
+  - Spring - MVC Moduel & Project 101 (JavaGDL Community)
+  - Strings, I/O, Formatting, and Parsing - Chapter for a OCJP course (Toshiba GCS)
+- **2013**
+  - Java Security Topics (JavaGDL Community)
+
+# Interests
+I'm interested in ... (learning some of them)
+
+- JS frameworks: React.js, AngualarJS
+- Programming languages: Scala, go, python, JS using Node.js
+- NoSQL-DB: MongoDB, DynamoDB
+- Analitics: Kafka, Spark, Hadoop
+- IoT
+- Reactive Systems
+- Test Driven Development
+- Microservices
+- Functional Programming
+- Cloud Computing
+- Docker
+
+Check out my [GitHub](https://github.com/MarceStarlet)
